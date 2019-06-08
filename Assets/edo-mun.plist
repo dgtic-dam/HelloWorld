@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+	<key>entidad</key>
+	<string>Aguascalientes</string>
+	<key>municipios</key>
+	<array>
+		<string>Aguascalientes</string>
+		<string>Asientos</string>
+		<string>Calvillo</string>
+		<string>Cosio</string>
+		<string>El Llano</string>
+		<string>Jesus Maria</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Baja California</string>
+	<key>municipios</key>
+	<array>
+		<string>Mexicali</string>
+		<string>Tijuana</string>
+		<string>Tecate</string>
+		<string>Rosarito</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Baja California Sur</string>
+	<key>municipios</key>
+	<array>
+		<string>Comondu</string>
+		<string>Mulege</string>
+		<string>La Paz</string>
+		<string>Los Cabos</string>
+		<string>Loreto</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Campeche</string>
+	<key>municipios</key>
+	<array>
+		<string>Calkini</string>
+		<string>Campeche</string>
+		<string>Carmen</string>
+		<string>Champoton</string>
+		<string>Hecelchakan</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Coahuila de Zaragoza</string>
+	<key>municipios</key>
+	<array>
+		<string>Abasolo</string>
+		<string>Candela</string>
+		<string>Escobedo</string>
+		<string>Frontera</string>
+		<string>General Cepeda</string>
+		<string>Saltillo</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Colima</string>
+	<key>municipios</key>
+	<array>
+		<string>Armeria</string>
+		<string>Colima</string>
+		<string>Comala</string>
+		<string>Coquimatlan</string>
+		<string>Cuauhtemoc</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Chiapas</string>
+	<key>municipios</key>
+	<array>
+		<string>Altamirano</string>
+		<string>Bellavista</string>
+		<string>Comitan</string>
+		<string>Francisco Leon</string>
+		<string>Tuxtla Gutierrez</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Chihuahua</string>
+	<key>municipios</key>
+	<array>
+		<string>Ahumada</string>
+		<string>Buenaventura</string>
+		<string>Chihuahua</string>
+		<string>Delicias</string>
+		<string>Galeana</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Distrito Federal</string>
+	<key>municipios</key>
+	<array>
+		<string>Alvaro Obregon</string>
+		<string>Azcapotzalco</string>
+		<string>Benito Juarez</string>
+		<string>Coyoacan</string>
+		<string>Cuajimalpa</string>
+		<string>Cuauhtemoc</string>
+		<string>Gustavo A. Madero</string>
+		<string>Iztacalco</string>
+		<string>Iztapalapa</string>
+		<string>Magdalena Contreras</string>
+		<string>Miguel Hidalgo</string>
+		<string>Milpa Alta</string>
+		<string>Tlahuac</string>
+		<string>Tlalpan</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Durango</string>
+	<key>municipios</key>
+	<array>
+		<string>Canelas</string>
+		<string>Durango</string>
+		<string>Gomez Palacio</string>
+		<string>Hidalgo</string>
+		<string>Inde</string>
+		<string>Lerdo</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Guanajuato</string>
+	<key>municipios</key>
+	<array>
+		<string>Abasolo</string>
+		<string>San Miguel de Allende</string>
+		<string>Celaya</string>
+		<string>Dolores Hidalgo</string>
+		<string>Guanajuato</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Guerrero</string>
+	<key>municipios</key>
+	<array>
+		<string>Acapulco</string>
+		<string>Atoyac</string>
+		<string>Benito Juarez</string>
+		<string>Chilpancingo</string>
+		<string>Iguala</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Hidalgo</string>
+	<key>municipios</key>
+	<array>
+		<string>Actopan</string>
+		<string>Cardonal</string>
+		<string>Emiliano Zapata</string>
+		<string>Mineral del Chico</string>
+		<string>Pachuca</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Jalisco</string>
+	<key>municipios</key>
+	<array>
+		<string>Arandas</string>
+		<string>La Barca</string>
+		<string>Cocula</string>
+		<string>Guadalajara</string>
+		<string>Lagos de Moreno</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Estado de Mexico</string>
+	<key>municipios</key>
+	<array>
+		<string>Almoloya de Juarez</string>
+		<string>Chalco</string>
+		<string>Ecatepec de Morelos</string>
+		<string>Huixquilucan</string>
+		<string>Ixtapaluca</string>
+		<string>Toluca</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Michoacan de Ocampo</string>
+	<key>municipios</key>
+	<array>
+		<string>Apatzingan</string>
+		<string>Buenavista</string>
+		<string>Caracuaro</string>
+		<string>Erongaricuaro</string>
+		<string>Morelia</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Morelos</string>
+	<key>municipios</key>
+	<array>
+		<string>Amacuzac</string>
+		<string>Cuautla</string>
+		<string>Cuernavaca</string>
+		<string>Emiliano Zapata</string>
+		<string>Huitzilac</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Nayarit</string>
+	<key>municipios</key>
+	<array>
+		<string>Acaponeta</string>
+		<string>Compostela</string>
+		<string>Ixtlan del Rio</string>
+		<string>Jala</string>
+		<string>Tepic</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Nuevo Leon</string>
+	<key>municipios</key>
+	<array>
+		<string>Abasolo</string>
+		<string>Cadereyta Jimenez</string>
+		<string>Doctor Arroyo</string>
+		<string>San Pedro Garza Garcia</string>
+		<string>Monterrey</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Oaxaca</string>
+	<key>municipios</key>
+	<array>
+		<string>Acatlan de Perez Figueroa</string>
+		<string>Cosolapa</string>
+		<string>El Espinal</string>
+		<string>Guelatao de Juarez</string>
+		<string>Oaxaca</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Puebla</string>
+	<key>municipios</key>
+	<array>
+		<string>Acatzingo</string>
+		<string>Coatepec</string>
+		<string>Esperanza</string>
+		<string>Huejotzingo</string>
+		<string>Izucar de Matamoros</string>
+		<string>Puebla</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Queretaro</string>
+	<key>municipios</key>
+	<array>
+		<string>Amealco de Bonfil</string>
+		<string>Corregidora</string>
+		<string>Ezequiel Montes</string>
+		<string>Pedro Escobedo</string>
+		<string>Queretaro</string>
+		<string>San Juan del Rio</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Quintana Roo</string>
+	<key>municipios</key>
+	<array>
+		<string>Cozumel</string>
+		<string>Felipe Carrillo Puerto</string>
+		<string>Isla Mujeres</string>
+		<string>Benito Juarez</string>
+		<string>Bacalar</string>
+		<string>Chetumal</string>
+		<string>Tulum</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>San Luis Potosi</string>
+	<key>municipios</key>
+	<array>
+		<string>Ahualulco</string>
+		<string>Cardenas</string>
+		<string>Ebano</string>
+		<string>Guadalcazar</string>
+		<string>Huehuetlan</string>
+		<string>Lagunillas</string>
+		<string>Matehuala</string>
+		<string>San Luis Potosi</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Sinaloa</string>
+	<key>municipios</key>
+	<array>
+		<string>Ahome</string>
+		<string>Badiraguato</string>
+		<string>Culiacan</string>
+		<string>Escuinapa</string>
+		<string>Guasave</string>
+		<string>Mazatlan</string>
+		<string>Rosario</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Sonora</string>
+	<key>municipios</key>
+	<array>
+		<string>Agua Prieta</string>
+		<string>Benjamin Hill</string>
+		<string>Caborca</string>
+		<string>Divisaderos</string>
+		<string>Etchojoa</string>
+		<string>Fronteras</string>
+		<string>Granados</string>
+		<string>Hermosillo</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Tabasco</string>
+	<key>municipios</key>
+	<array>
+		<string>Balancan</string>
+		<string>Centla</string>
+		<string>Emiliano Zapata</string>
+		<string>Huimanguillo</string>
+		<string>Jalapa</string>
+		<string>Villa hermosa</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Tamaulipas</string>
+	<key>municipios</key>
+	<array>
+		<string>Aldama</string>
+		<string>Bustamante</string>
+		<string>Matamoros</string>
+		<string>Nuevo Laredo</string>
+		<string>Reynosa</string>
+		<string>Cd. Victoria</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Tlaxcala</string>
+	<key>municipios</key>
+	<array>
+		<string>Apizaco</string>
+		<string>Calpulalpan</string>
+		<string>Domingo Arenas</string>
+		<string>Huamantla</string>
+		<string>Ixtenco</string>
+		<string>Juan Cuamatzi</string>
+		<string>Nativitas</string>
+		<string>Tlaxcala</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Veracruz de Ignacio de la Llave</string>
+	<key>municipios</key>
+	<array>
+		<string>Acayucan</string>
+		<string>Cordoba</string>
+		<string>Espinal</string>
+		<string>Fortin</string>
+		<string>Huatusco</string>
+		<string>Ignacio de la Llave</string>
+		<string>Maltrata</string>
+		<string>Xalapa</string>
+		<string>Veracruz</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Yucatan</string>
+	<key>municipios</key>
+	<array>
+		<string>Acanceh</string>
+		<string>Bokoba</string>
+		<string>Celestun</string>
+		<string>Dzan</string>
+		<string>Espita</string>
+		<string>Halacho</string>
+		<string>Ixil</string>
+		<string>Kopoma</string>
+		<string>Merida</string>
+	</array>
+     </dict>
+     <dict>
+	<key>entidad</key>
+	<string>Zacatecas</string>
+	<key>municipios</key>
+	<array>
+		<string>Apulco</string>
+		<string>Benito Juarez</string>
+		<string>Concepcion del Oro</string>
+		<string>Fresnillo</string>
+		<string>Genaro Codina</string>
+		<string>Huanusco</string>
+		<string>Jerez</string>
+		<string>Luis Moya</string>
+		<string>Melchor Ocampo</string>
+		<string>Ojocaliente</string>
+		<string>Panuco</string>
+		<string>Rio Grande</string>
+		<string>Sombrerete</string>
+		<string>Tepechitlan</string>
+		<string>Villanueva</string>
+		<string>Zacatecas</string>
+	</array>
+     </dict>
+</array>
+</plist>
