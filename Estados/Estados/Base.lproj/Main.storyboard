@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Estados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-SS-fjI">
+                                <rect key="frame" x="53" y="79" width="334" height="211"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-Rs-tnz">
+                                <rect key="frame" x="157" y="436" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QyE-S3-0bO"/>
+                                </constraints>
+                                <color key="tintColor" red="0.5835227370262146" green="0.21590948104858398" blue="0.99956172704696655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AY0-6Y-GD4" kind="presentation" id="w9U-Ps-WxH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text Field" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbX-DT-jAC">
+                                <rect key="frame" x="132" y="367" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="O6M-yG-it2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYx-SS-fjI" secondAttribute="trailing" constant="20" id="Lfq-q1-pvf"/>
+                            <constraint firstItem="aYx-SS-fjI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NSa-EV-HZ5"/>
+                            <constraint firstItem="vbX-DT-jAC" firstAttribute="top" secondItem="aYx-SS-fjI" secondAttribute="bottom" constant="20" id="XTt-7i-Y1B"/>
+                            <constraint firstItem="2oi-Rs-tnz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hkT-IF-tWt"/>
+                            <constraint firstItem="aYx-SS-fjI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="kQ6-Vw-OUV"/>
+                            <constraint firstItem="2oi-Rs-tnz" firstAttribute="top" secondItem="vbX-DT-jAC" secondAttribute="bottom" constant="40" id="nUL-xK-lvG"/>
+                            <constraint firstItem="aYx-SS-fjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p4O-gj-9rF"/>
+                            <constraint firstItem="vbX-DT-jAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zeq-FF-o2J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K8n-JF-XWg">
+            <objects>
+                <viewController id="AY0-6Y-GD4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YkR-jb-MdO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vPs-eg-evq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKo-J2-Eqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mapa" width="360" height="267"/>
+    </resources>
+</document>
