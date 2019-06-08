@@ -18,9 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-O5-tmh">
-                                <rect key="frame" x="269" y="828" width="125" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wYP-B9-Ryb">
+                                <rect key="frame" x="15" y="144" width="384" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-O5-tmh">
+                                <rect key="frame" x="169" y="431" width="76" height="34"/>
                                 <color key="backgroundColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Siguiente"/>
@@ -30,6 +35,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wYP-B9-Ryb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Q5O-fr-hrL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wYP-B9-Ryb" secondAttribute="trailing" constant="15" id="VYe-XZ-Rwo"/>
+                            <constraint firstItem="wYP-B9-Ryb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Wo4-LD-Flb"/>
+                            <constraint firstItem="Yhq-O5-tmh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oSk-os-gmc"/>
+                            <constraint firstItem="Yhq-O5-tmh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wd9-56-VvO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -45,9 +57,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-St-1ro">
-                                <rect key="frame" x="20" y="828" width="125" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-St-1ro">
+                                <rect key="frame" x="15" y="808" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Salir"/>
@@ -55,9 +66,8 @@
                                     <segue destination="ZOK-nL-nT4" kind="unwind" unwindAction="unwindToHome:" id="nxq-ca-sxw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-ZL-qQd">
-                                <rect key="frame" x="269" y="828" width="125" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-ZL-qQd">
+                                <rect key="frame" x="299" y="808" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Siguiente"/>
@@ -65,15 +75,26 @@
                                     <segue destination="g7x-an-Tut" kind="presentation" id="888-Xs-HfM"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoy" translatesAutoresizingMaskIntoConstraints="NO" id="vt6-lU-vV2">
+                                <rect key="frame" x="48" y="144" width="318" height="327"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WeZ-St-1ro" firstAttribute="leading" secondItem="FHe-bh-M8a" secondAttribute="leading" constant="15" id="2FC-eV-7yT"/>
+                            <constraint firstItem="WeZ-St-1ro" firstAttribute="bottom" secondItem="FHe-bh-M8a" secondAttribute="bottom" constant="-20" id="A5H-e0-ghq"/>
+                            <constraint firstItem="FHe-bh-M8a" firstAttribute="trailing" secondItem="dVI-ZL-qQd" secondAttribute="trailing" constant="15" id="HVJ-7m-0tJ"/>
+                            <constraint firstItem="vt6-lU-vV2" firstAttribute="top" secondItem="FHe-bh-M8a" secondAttribute="top" constant="100" id="Pij-oy-O2p"/>
+                            <constraint firstItem="vt6-lU-vV2" firstAttribute="centerX" secondItem="MbR-fn-1x3" secondAttribute="centerX" id="Xxu-n8-kfQ"/>
+                            <constraint firstItem="dVI-ZL-qQd" firstAttribute="bottom" secondItem="FHe-bh-M8a" secondAttribute="bottom" constant="-20" id="YvL-hW-rFr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FHe-bh-M8a"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpd-M0-vpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ZOK-nL-nT4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="971" y="139"/>
+            <point key="canvasLocation" x="969.56521739130437" y="138.61607142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KXd-4d-gHy">
@@ -83,9 +104,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBE-JR-0Ix">
-                                <rect key="frame" x="269" y="828" width="125" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBE-JR-0Ix">
+                                <rect key="frame" x="299" y="808" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Salir"/>
@@ -93,9 +113,8 @@
                                     <segue destination="gJZ-JY-TfI" kind="unwind" unwindAction="unwindToHome:" id="gSW-BX-GsM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tex-kG-ElB">
-                                <rect key="frame" x="20" y="828" width="125" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tex-kG-ElB">
+                                <rect key="frame" x="15" y="808" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Regresar"/>
@@ -105,13 +124,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tex-kG-ElB" firstAttribute="bottom" secondItem="HbA-t8-fal" secondAttribute="bottom" constant="-20" id="GWH-QA-vXu"/>
+                            <constraint firstItem="tex-kG-ElB" firstAttribute="leading" secondItem="HbA-t8-fal" secondAttribute="leading" constant="15" id="VQM-N5-CG5"/>
+                            <constraint firstItem="DBE-JR-0Ix" firstAttribute="bottom" secondItem="HbA-t8-fal" secondAttribute="bottom" constant="-20" id="h5B-1H-A6I"/>
+                            <constraint firstItem="HbA-t8-fal" firstAttribute="trailing" secondItem="DBE-JR-0Ix" secondAttribute="trailing" constant="15" id="spT-B0-7qo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HbA-t8-fal"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aO0-36-6dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gJZ-JY-TfI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="140"/>
+            <point key="canvasLocation" x="1805.7971014492755" y="139.95535714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hoy" width="318" height="327"/>
+    </resources>
 </document>
