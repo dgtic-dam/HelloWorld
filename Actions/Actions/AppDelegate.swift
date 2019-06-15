@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let sesionAbierta = UserDefaults.standard.value(forKey: "inicioSesion")
         if let fechaAnterior = sesionAbierta as? Date { //Declaracion condicional
             let fechaActual = Date()
-            let duracionSesion = 20.0 //60 segundos
+            let duracionSesion = 300.0 //60 segundos
             let tiempoTranscurrido = fechaAnterior.addingTimeInterval(duracionSesion)
             if tiempoTranscurrido > fechaActual{
                 //La sesión es válida
