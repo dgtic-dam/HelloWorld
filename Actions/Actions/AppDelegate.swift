@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let sesionAbierta = UserDefaults.standard.value(forKey: "inicioSesion")
+        if let fechaAnterior = sesionAbierta as? Date { //Declaracion condicional
+            let fechaActual = Date()
+            let duracionSesion = 20.0 //60 segundos
+            let tiempoTranscurrido = fechaAnterior.addingTimeInterval(duracionSesion)
+            if tiempoTranscurrido > fechaActual{
+                //La sesión es válida
+                //Referencia al storyboard
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                //instanciar el controller que vamos a presentar
+                let elController = sb.instantiateViewController(withIdentifier: "WelcomeTab")
+                //presentarlo en la ventana
+                self.window?.rootViewController = elController
+            }
+        }
         return true
     }
 

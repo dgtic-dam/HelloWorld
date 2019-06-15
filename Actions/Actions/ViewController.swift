@@ -8,17 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func unwindToHome(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source
+        //let sourceViewController = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
     }
     
     @IBOutlet weak var ResizeY: NSLayoutConstraint!
     
     @IBAction func btnEnter(_ sender: Any) {
-        var mensaje = ""
+        //var mensaje:String
+        var mensaje = "" //Inferencia
         let correo = txtCorreo.text!
         if correo.isEmpty{
             mensaje = "Escribe tu correo"
@@ -38,7 +39,11 @@ class ViewController: UIViewController {
         }
         else{
             //Navega a la siguiente vista
+            txtCorreo.text = ""
+            //Guardar el timestamp del inicio de sesión
+            UserDefaults.standard.set(Date(), forKey: "inicioSesion")
             self.performSegue(withIdentifier: "LoginOK", sender: nil)
+            
         }
     }
     
@@ -48,6 +53,7 @@ class ViewController: UIViewController {
         print("tap")
         txtCorreo.resignFirstResponder()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     
@@ -60,7 +66,8 @@ class ViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-      /*  NotificationCenter.default.removeObserver(self)*/
+        NotificationCenter.default.removeObserver(self)
+        //txtCorreo.text = ""
     }
     
     @objc func subeTeclado(_ notificacion:Notification){
@@ -78,6 +85,14 @@ class ViewController: UIViewController {
        let tapGestureRecognizer = UITapGestureRecognizer(target: self ,action:#selector(TapInView(_:)))
         
         self.view.addGestureRecognizer(tapGestureRecognizer)
+        
+        txtCorreo.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        // called when 'return' key pressed. return NO to ignore.
+        btnEnter(self) //selector para invocar btnEnter
+        return true
     }
 
 
