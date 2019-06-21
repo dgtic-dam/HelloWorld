@@ -3,13 +3,13 @@
 ## Opcional
 Una variable opcional se dice de aquella cuya declaración contiene el signo de interrogación (?) siguiendo al tipo de dato:
 
-`var restaurantName: String?`
+`var nombre: String?`
 
 Como podemos ver la única diferencia con una variable normal es el signo de interrogación al final de la línea, esto es lo que vuelve la variable en Optional u opcional por su traducción al castellano. Una variable opcional no es más que un contenedor, un espacio de memoria que puede o no tener un valor asociado, aunque cuando no tiene un valor asociado el compilador asigna nil a la variable en cuestión.
 
 Para entender del todo, veamos una variable opcional como una caja o un envoltorio cualquiera, donde al momento de su creación (de no darle un valor inicial) se introduce el valor especial nil. Una vez declarada esta variable, el contenido de la misma pasa a ser enmascarado (oculto) y como único podemos verificar su contenido es desenvolviendo implícitamente la misma. Esto lo podemos lograr mediante el signo de exclamación (!), de la siguiente forma:
 
-`restaurantName!`
+`nombre!`
 
 Es importante aclarar que en caso de que esta variable contenga nil como valor asociado e intentamos desempaquetar su contenido, el compilador lanzará un “fatal error” mostrándonos el siguiente mensaje:
 
@@ -17,9 +17,9 @@ fatal error: unexpectedly found nil while unwrapping an Optional value
 Para evitar este error, antes de hacer uso de la variable, tenemos que verificar si el contenido de la misma no es nil. Como muchos habrán imaginado, esto lo podemos lograr con el siguiente código:
 
 `
-if restaurantName != nil {
+if nombre != nil {
 
-    print("El valor de la variable opcional es: \(restaurantName!)")
+    print("El valor de la variable opcional es: \(nombre!)")
 
 } else {
 
