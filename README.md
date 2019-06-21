@@ -22,16 +22,16 @@ if nombre != nil {
 }
 ````
 
-With optional binding, using if let
+### Optional binding, utilizando if let
 
-`
-let optionalUsername:String? = "bob42"
+```
+let optionalUsername:String? = "Jesus"
 
 if let username = optionalUsername {
     print(username)
 }
 
-`
+```
 
 
 ## Var y Let
