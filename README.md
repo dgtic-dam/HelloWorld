@@ -11,49 +11,16 @@ Una variable opcional como una caja o un envoltorio cualquiera, donde al momento
 
 `nombre!`
 
-Es importante aclarar que en caso de que esta variable contenga nil como valor asociado e intentamos desempaquetar su contenido, el compilador lanzará un “fatal error” mostrándonos el siguiente mensaje:
 
-fatal error: unexpectedly found nil while unwrapping an Optional value
-Para evitar este error, antes de hacer uso de la variable, tenemos que verificar si el contenido de la misma no es nil. Como muchos habrán imaginado, esto lo podemos lograr con el siguiente código:
+### Force unwrapping, usando !
 
-`if nombre != nil {
+````
+let nombre:String? = "Daniel Rosales"
 
-    print("El valor de la variable opcional es: \(nombre!)")
-
-} else {
-
-    print("Valor nulo")
-
-} // else
-
-`
-
-
-`
-if let restaurantNameUnwrapped = restaurantName {
-
-    print("El valor de la variable opcional es: \(restaurantNameUnwrapped)")
-
-} else {
-
-    print("Valor nulo")
-
-} // else
-`
-A esta forma se le conoce como Optional Binding y se utiliza para averiguar si una variable opcional contiene un valor distinto a nil, de ser así, el valor de la misma pasa a estar disponible como una constante o variable temporal, como parte de una sola acción.
-
-You can unwrap optionals in 3 different ways:
-
-With force unwrapping, using !
-
-`
-let email:String? = "johndoe@example.com"
-
-if email != nil {
-    print(email!)
+if nombre != nil {
+    print(nombre!)
 }
-
-`
+````
 
 With optional binding, using if let
 
@@ -66,18 +33,15 @@ if let username = optionalUsername {
 
 `
 
-With implicitly unwrapped optionals, using !
-
-`@IBOutlet weak var usernameField:UITextField?`
 
 ## Var y Let
 
-To make a constant, use let like this:
+Let se utiliza para constantes:
 
-`let x = 10`
+`let x = 100`
 
-To make a variable, use var like this:
+Var se utiliza para variables:
 
-`var y = 20`
+`var y = 100`
 
 
