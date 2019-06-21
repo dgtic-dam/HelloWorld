@@ -46,20 +46,25 @@ A esta forma se le conoce como Optional Binding y se utiliza para averiguar si u
 You can unwrap optionals in 3 different ways:
 
 With force unwrapping, using !
-let email:String? = "johndoe@example.com"
+
 `
+let email:String? = "johndoe@example.com"
+
 if email != nil {
     print(email!)
 }
 `
 With optional binding, using if let
-let optionalUsername:String? = "bob42"
+
 `
+let optionalUsername:String? = "bob42"
+
 if let username = optionalUsername {
     print(username)
 }
 `
 With implicitly unwrapped optionals, using !
+
 `@IBOutlet weak var usernameField:UITextField?`
 
 ## Var y Let
