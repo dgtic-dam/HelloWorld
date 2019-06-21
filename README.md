@@ -5,9 +5,9 @@ Una variable opcional se dice de aquella cuya declaración contiene el signo de 
 
 `var nombre: String?`
 
-Como podemos ver la única diferencia con una variable normal es el signo de interrogación al final de la línea, esto es lo que vuelve la variable en Optional u opcional por su traducción al castellano. Una variable opcional no es más que un contenedor, un espacio de memoria que puede o no tener un valor asociado, aunque cuando no tiene un valor asociado el compilador asigna nil a la variable en cuestión.
+La única diferencia con una variable normal es el signo de interrogación al final de la línea, esto es lo que vuelve la variable en Optional. Una variable opcional no es más que un contenedor, un espacio de memoria que puede o no tener un valor asociado, aunque cuando no tiene un valor asociado el compilador asigna nil a la variable en cuestión.
 
-Para entender del todo, veamos una variable opcional como una caja o un envoltorio cualquiera, donde al momento de su creación (de no darle un valor inicial) se introduce el valor especial nil. Una vez declarada esta variable, el contenido de la misma pasa a ser enmascarado (oculto) y como único podemos verificar su contenido es desenvolviendo implícitamente la misma. Esto lo podemos lograr mediante el signo de exclamación (!), de la siguiente forma:
+Una variable opcional como una caja o un envoltorio cualquiera, donde al momento de su creación (de no darle un valor inicial) se introduce el valor especial nil. Una vez declarada esta variable, el contenido de la misma pasa a ser enmascarado (oculto) y como único podemos verificar su contenido es desenvolviendo implícitamente la misma. Esto lo podemos lograr mediante el signo de exclamación (!), de la siguiente forma:
 
 `nombre!`
 
@@ -16,8 +16,7 @@ Es importante aclarar que en caso de que esta variable contenga nil como valor a
 fatal error: unexpectedly found nil while unwrapping an Optional value
 Para evitar este error, antes de hacer uso de la variable, tenemos que verificar si el contenido de la misma no es nil. Como muchos habrán imaginado, esto lo podemos lograr con el siguiente código:
 
-`
-if nombre != nil {
+`if nombre != nil {
 
     print("El valor de la variable opcional es: \(nombre!)")
 
@@ -28,7 +27,7 @@ if nombre != nil {
 } // else
 
 `
-…aunque el enfoque del código anterior es el correcto, se recomienda usar la sintaxis if let para tal fin, como podemos observar en el ejemplo a continuación:
+
 
 `
 if let restaurantNameUnwrapped = restaurantName {
