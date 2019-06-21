@@ -3,7 +3,7 @@
 //  Actions
 //
 //  Created by Infraestructura on 6/14/19.
-//  Copyright © 2019 Dan Ros. All rights reserved.
+//  Copyright © 2019 Daniel Rosales. All rights reserved.
 //
 
 import UIKit
