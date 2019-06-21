@@ -53,7 +53,9 @@ let email:String? = "johndoe@example.com"
 if email != nil {
     print(email!)
 }
+
 `
+
 With optional binding, using if let
 
 `
@@ -62,7 +64,9 @@ let optionalUsername:String? = "bob42"
 if let username = optionalUsername {
     print(username)
 }
+
 `
+
 With implicitly unwrapped optionals, using !
 
 `@IBOutlet weak var usernameField:UITextField?`
