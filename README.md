@@ -67,6 +67,7 @@ With implicitly unwrapped optionals, using !
 To make a constant, use let like this:
 
 `let x = 10`
+
 To make a variable, use var like this:
 
 `var y = 20`
