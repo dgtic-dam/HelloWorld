@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aA6-ix-Xbm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yZu-Qj-3Jt">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,6 +12,9 @@
     <customFonts key="customFonts">
         <array key="Champagne &amp; Limousines Bold.ttf">
             <string>Champagne&amp;Limousines-Bold</string>
+        </array>
+        <array key="Champagne &amp; Limousines.ttf">
+            <string>Champagne&amp;Limousines</string>
         </array>
     </customFonts>
     <scenes>
@@ -132,7 +135,175 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOK-7R-BQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="206"/>
+            <point key="canvasLocation" x="2070" y="-29"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="CQR-uN-xH2">
+            <objects>
+                <viewController id="yZu-Qj-3Jt" customClass="LoginViewController" customModule="HamburguerMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qqj-88-V5z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TIh-6A-ThP">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIENVENIDO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcU-HS-7sL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="49.333333333333336"/>
+                                        <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="VAj-lK-Ejy">
+                                        <rect key="frame" x="0.0" y="69.333333333333329" width="414" height="152.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_blanco" translatesAutoresizingMaskIntoConstraints="NO" id="val-rN-FnO">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="47.666666666666664"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzP-0t-tuq">
+                                                <rect key="frame" x="0.0" y="47.666666666666671" width="414" height="31.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbL-RT-zCO">
+                                                <rect key="frame" x="0.0" y="79.333333333333329" width="414" height="72.999999999999986"/>
+                                                <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="25"/>
+                                                <state key="normal" title="CONOCE MÁS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-n7-bL6">
+                                        <rect key="frame" x="0.0" y="241.66666666666669" width="414" height="107"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H7A-dF-Oem">
+                                                <rect key="frame" x="0.0" y="25.000000000000004" width="207" height="57.333333333333343"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i_networking" translatesAutoresizingMaskIntoConstraints="NO" id="Xlz-c5-0Ux">
+                                                        <rect key="frame" x="86" y="0.0" width="35" height="35"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NETWORKING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgW-os-mfL">
+                                                        <rect key="frame" x="41.999999999999993" y="35" width="123.33333333333331" height="22.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-Ba-eCb">
+                                                <rect key="frame" x="207" y="25.333333333333318" width="207" height="56.333333333333343"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i_agenda" translatesAutoresizingMaskIntoConstraints="NO" id="M82-Cx-1hs">
+                                                        <rect key="frame" x="86" y="0.0" width="35" height="35"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MI AGENDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZn-tG-GQP">
+                                                        <rect key="frame" x="54.999999999999993" y="35" width="97.333333333333314" height="21.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2h-gH-zBm">
+                                        <rect key="frame" x="0.0" y="368.66666666666669" width="414" height="73"/>
+                                        <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="25"/>
+                                        <state key="normal" title="NUESTROS PATROCINADORES"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="jx6-17-eGb">
+                                        <rect key="frame" x="0.0" y="461.66666666666669" width="414" height="254.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBi-T2-4Am">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLv-OJ-CsE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBn-8m-uR5">
+                                                        <rect key="frame" x="39.333333333333343" y="0.0" width="374.66666666666663" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vo8-79-VC1">
+                                                <rect key="frame" x="0.0" y="107.66666666666669" width="414" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDp-aU-Bym">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-Hj-4SJ">
+                                                        <rect key="frame" x="39.666666666666657" y="0.0" width="374.33333333333337" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="SdH-dH-9K7">
+                                                <rect key="frame" x="0.0" y="215.33333333333331" width="414" height="39"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-5V-dae">
+                                                        <rect key="frame" x="295" y="0.0" width="119" height="39"/>
+                                                        <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="25"/>
+                                                        <state key="normal" title="   ENTRAR   "/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SdH-dH-9K7" secondAttribute="trailing" constant="10" id="J15-FV-wvF"/>
+                                            <constraint firstAttribute="bottom" secondItem="SdH-dH-9K7" secondAttribute="bottom" constant="10" id="Z50-pF-6Nh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DGs-n7-bL6" firstAttribute="leading" secondItem="TIh-6A-ThP" secondAttribute="leading" constant="10" id="745-Ry-aXM"/>
+                                    <constraint firstAttribute="trailing" secondItem="jx6-17-eGb" secondAttribute="trailing" constant="10" id="BYV-JA-dCQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="VAj-lK-Ejy" secondAttribute="trailing" constant="10" id="Ckf-dj-Yol"/>
+                                    <constraint firstItem="jx6-17-eGb" firstAttribute="leading" secondItem="TIh-6A-ThP" secondAttribute="leading" constant="10" id="LJl-Bp-Xmr"/>
+                                    <constraint firstAttribute="trailing" secondItem="DGs-n7-bL6" secondAttribute="trailing" constant="10" id="Y0O-Ip-edS"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2h-gH-zBm" secondAttribute="trailing" constant="10" id="Z9l-yx-SBR"/>
+                                    <constraint firstItem="VAj-lK-Ejy" firstAttribute="leading" secondItem="TIh-6A-ThP" secondAttribute="leading" constant="10" id="baC-1B-6MD"/>
+                                    <constraint firstItem="WcU-HS-7sL" firstAttribute="leading" secondItem="TIh-6A-ThP" secondAttribute="leading" constant="10" id="mmJ-Yh-PS5"/>
+                                    <constraint firstAttribute="trailing" secondItem="WcU-HS-7sL" secondAttribute="trailing" constant="10" id="ozy-Ol-CNv"/>
+                                    <constraint firstItem="x2h-gH-zBm" firstAttribute="leading" secondItem="TIh-6A-ThP" secondAttribute="leading" constant="10" id="s1F-az-l9A"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XZR-vC-EXx" firstAttribute="bottom" secondItem="TIh-6A-ThP" secondAttribute="bottom" id="N3p-bf-Okk"/>
+                            <constraint firstItem="TIh-6A-ThP" firstAttribute="leading" secondItem="XZR-vC-EXx" secondAttribute="leading" id="cRw-ai-e9T"/>
+                            <constraint firstItem="XZR-vC-EXx" firstAttribute="trailing" secondItem="TIh-6A-ThP" secondAttribute="trailing" id="oqh-Mp-kEX"/>
+                            <constraint firstItem="TIh-6A-ThP" firstAttribute="top" secondItem="XZR-vC-EXx" secondAttribute="top" id="t4z-xx-lbr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XZR-vC-EXx"/>
+                    </view>
+                    <connections>
+                        <outlet property="subStack1" destination="VAj-lK-Ejy" id="eup-M2-mpf"/>
+                        <outlet property="subStack2" destination="DGs-n7-bL6" id="Ndk-Ua-8TU"/>
+                        <outlet property="subStack3" destination="jx6-17-eGb" id="YdT-J2-NYf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muU-lV-YgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VFP-1h-Jad">
@@ -155,8 +326,11 @@
     </scenes>
     <resources>
         <image name="Icon-40" width="40" height="40"/>
+        <image name="i_agenda" width="35" height="35"/>
+        <image name="i_networking" width="35" height="35"/>
+        <image name="logo_blanco" width="229" height="25.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AIu-IJ-Wa8"/>
+        <segue reference="Odo-AR-Mqh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -14,6 +14,7 @@
 		50ACEF8C22BD84E900759B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACEF8A22BD84E900759B4D /* LaunchScreen.storyboard */; };
 		50ACEF9522BD87AA00759B4D /* Champagne & Limousines Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50ACEF9322BD87A900759B4D /* Champagne & Limousines Bold.ttf */; };
 		50ACEF9622BD87AA00759B4D /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50ACEF9422BD87AA00759B4D /* Champagne & Limousines.ttf */; };
+		50ACEF9822BDBF3100759B4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACEF9722BDBF3100759B4D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		50ACEF8D22BD84E900759B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50ACEF9322BD87A900759B4D /* Champagne & Limousines Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Champagne & Limousines Bold.ttf"; path = "../../Assets/Champagne & Limousines Bold.ttf"; sourceTree = "<group>"; };
 		50ACEF9422BD87AA00759B4D /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Champagne & Limousines.ttf"; path = "../../Assets/Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		50ACEF9722BDBF3100759B4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				50ACEF8822BD84E900759B4D /* Assets.xcassets */,
 				50ACEF8A22BD84E900759B4D /* LaunchScreen.storyboard */,
 				50ACEF8D22BD84E900759B4D /* Info.plist */,
+				50ACEF9722BDBF3100759B4D /* LoginViewController.swift */,
 			);
 			path = HamburguerMenu;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50ACEF9822BDBF3100759B4D /* LoginViewController.swift in Sources */,
 				50ACEF8422BD84D900759B4D /* ViewController.swift in Sources */,
 				50ACEF8222BD84D900759B4D /* AppDelegate.swift in Sources */,
 			);
