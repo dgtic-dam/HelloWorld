@@ -9,8 +9,26 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    
 
     @IBOutlet weak var subStack1: UIStackView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(true)
+        //994fb6
+        //let miColor = UIColor(red: 130.0/255.0, green: 36.0/255.0, blue: 227.0/255.0, alpha: 1.0)
+        let miColor = Utils.mainColor
+        let bg = UIView(frame: subStack1.bounds)
+        bg.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        bg.backgroundColor = miColor
+        subStack1.insertSubview(bg, at:0)
+        let bg2 = UIView(frame: subStack1.bounds)
+        bg2.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        bg2.backgroundColor = miColor
+        subStack2.insertSubview(bg2, at:0)
+    }
     
     @IBOutlet weak var subStack2: UIStackView!
     

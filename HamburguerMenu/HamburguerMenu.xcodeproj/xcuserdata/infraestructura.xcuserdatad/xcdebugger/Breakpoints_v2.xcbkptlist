@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HamburguerMenu/LoginViewController.swift"
+            timestampString = "582919427.27104"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HamburguerMenu.LoginViewController.subStack1.getter : Swift.Optional&lt;__C.UIStackView&gt;"
+                  moduleName = "HamburguerMenu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infraestructura/Desktop/DiplomadoModulo4/HamburguerMenu/HamburguerMenu/LoginViewController.swift"
+                  timestampString = "582911610.601298"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HamburguerMenu.LoginViewController.subStack1.setter : Swift.Optional&lt;__C.UIStackView&gt;"
+                  moduleName = "HamburguerMenu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infraestructura/Desktop/DiplomadoModulo4/HamburguerMenu/HamburguerMenu/LoginViewController.swift"
+                  timestampString = "582911610.60589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HamburguerMenu.LoginViewController.subStack1.modify : Swift.Optional&lt;__C.UIStackView&gt;"
+                  moduleName = "HamburguerMenu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infraestructura/Desktop/DiplomadoModulo4/HamburguerMenu/HamburguerMenu/LoginViewController.swift"
+                  timestampString = "582911610.6084729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HamburguerMenu.LoginViewController.subStack1.modify : Swift.Optional&lt;__C.UIStackView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HamburguerMenu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infraestructura/Desktop/DiplomadoModulo4/HamburguerMenu/HamburguerMenu/LoginViewController.swift"
+                  timestampString = "582911610.610863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HamburguerMenu.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HamburguerMenu.LoginViewController"
+                  moduleName = "HamburguerMenu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infraestructura/Desktop/DiplomadoModulo4/HamburguerMenu/HamburguerMenu/LoginViewController.swift"
+                  timestampString = "582911610.613409"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HamburguerMenu.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HamburguerMenu.LoginViewController&gt;"
+                  moduleName = "HamburguerMenu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infraestructura/Desktop/DiplomadoModulo4/HamburguerMenu/HamburguerMenu/LoginViewController.swift"
+                  timestampString = "582911610.6159641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

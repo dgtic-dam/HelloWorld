@@ -10,7 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    
     var menuOpen = false
+    
+    
+    @IBOutlet weak var gif: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //gif.image = UIImage(named: "giphy.gif")
+        
+        //para encontrar la ruta a un archivo, en e paquete de la aplicación Bundle hace referencia a un paquete
+        if let urlGif = Bundle.main.url(forResource: "giphy", withExtension: "gif"){
+            gif.image = UIImage.animatedImage(withAnimatedGIFURL: urlGif)
+        }
+    }
     
     @IBOutlet weak var leftConstraint: NSLayoutConstraint!
     
@@ -50,7 +65,7 @@ class ViewController: UIViewController {
         menuOpen = false
         }
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

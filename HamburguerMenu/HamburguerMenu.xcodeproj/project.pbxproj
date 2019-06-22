@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5039810722BE6F5E00E1300E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5039810622BE6F5E00E1300E /* CustomButton.swift */; };
+		5039810922BE7AFE00E1300E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5039810822BE7AFE00E1300E /* Utils.swift */; };
+		5039810B22BE85E900E1300E /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5039810A22BE85E900E1300E /* giphy.gif */; };
+		5039811222BE8FFB00E1300E /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039811022BE8FFB00E1300E /* UIImage+animatedGIF.m */; };
+		5039811422BE9A3100E1300E /* iPho-ne Tutorial.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5039811322BE9A3100E1300E /* iPho-ne Tutorial.pdf */; };
+		5039811822BE9F2D00E1300E /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5039811722BE9F2D00E1300E /* webViewController.swift */; };
+		5039811B22BEA25900E1300E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5039811A22BEA25900E1300E /* WebKit.framework */; };
 		50ACEF8222BD84D900759B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACEF8122BD84D900759B4D /* AppDelegate.swift */; };
 		50ACEF8422BD84D900759B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACEF8322BD84D900759B4D /* ViewController.swift */; };
 		50ACEF8722BD84D900759B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACEF8522BD84D900759B4D /* Main.storyboard */; };
@@ -18,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5039810622BE6F5E00E1300E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5039810822BE7AFE00E1300E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5039810A22BE85E900E1300E /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../Assets/images/giphy.gif; sourceTree = "<group>"; };
+		5039810C22BE8AD800E1300E /* HamburguerMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HamburguerMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		5039811022BE8FFB00E1300E /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		5039811122BE8FFB00E1300E /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		5039811322BE9A3100E1300E /* iPho-ne Tutorial.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "iPho-ne Tutorial.pdf"; path = "../../Assets/iPho-ne Tutorial.pdf"; sourceTree = "<group>"; };
+		5039811722BE9F2D00E1300E /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
+		5039811A22BEA25900E1300E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		50ACEF7E22BD84D900759B4D /* HamburguerMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburguerMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ACEF8122BD84D900759B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50ACEF8322BD84D900759B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5039811B22BEA25900E1300E /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5039811922BEA25800E1300E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5039811A22BEA25900E1300E /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50ACEF7522BD84D800759B4D = {
 			isa = PBXGroup;
 			children = (
 				50ACEF8022BD84D900759B4D /* HamburguerMenu */,
 				50ACEF7F22BD84D900759B4D /* Products */,
+				5039811922BEA25800E1300E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,10 @@
 		50ACEF8022BD84D900759B4D /* HamburguerMenu */ = {
 			isa = PBXGroup;
 			children = (
+				5039811322BE9A3100E1300E /* iPho-ne Tutorial.pdf */,
+				5039811122BE8FFB00E1300E /* UIImage+animatedGIF.h */,
+				5039811022BE8FFB00E1300E /* UIImage+animatedGIF.m */,
+				5039810A22BE85E900E1300E /* giphy.gif */,
 				50ACEF9322BD87A900759B4D /* Champagne & Limousines Bold.ttf */,
 				50ACEF9422BD87AA00759B4D /* Champagne & Limousines.ttf */,
 				50ACEF8122BD84D900759B4D /* AppDelegate.swift */,
@@ -69,6 +99,10 @@
 				50ACEF8A22BD84E900759B4D /* LaunchScreen.storyboard */,
 				50ACEF8D22BD84E900759B4D /* Info.plist */,
 				50ACEF9722BDBF3100759B4D /* LoginViewController.swift */,
+				5039810622BE6F5E00E1300E /* CustomButton.swift */,
+				5039810822BE7AFE00E1300E /* Utils.swift */,
+				5039810C22BE8AD800E1300E /* HamburguerMenu-Bridging-Header.h */,
+				5039811722BE9F2D00E1300E /* webViewController.swift */,
 			);
 			path = HamburguerMenu;
 			sourceTree = "<group>";
@@ -105,6 +139,7 @@
 				TargetAttributes = {
 					50ACEF7D22BD84D900759B4D = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -134,7 +169,9 @@
 				50ACEF8C22BD84E900759B4D /* LaunchScreen.storyboard in Resources */,
 				50ACEF9622BD87AA00759B4D /* Champagne & Limousines.ttf in Resources */,
 				50ACEF8922BD84E900759B4D /* Assets.xcassets in Resources */,
+				5039811422BE9A3100E1300E /* iPho-ne Tutorial.pdf in Resources */,
 				50ACEF9522BD87AA00759B4D /* Champagne & Limousines Bold.ttf in Resources */,
+				5039810B22BE85E900E1300E /* giphy.gif in Resources */,
 				50ACEF8722BD84D900759B4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5039811822BE9F2D00E1300E /* webViewController.swift in Sources */,
+				5039810922BE7AFE00E1300E /* Utils.swift in Sources */,
+				5039811222BE8FFB00E1300E /* UIImage+animatedGIF.m in Sources */,
+				5039810722BE6F5E00E1300E /* CustomButton.swift in Sources */,
 				50ACEF9822BDBF3100759B4D /* LoginViewController.swift in Sources */,
 				50ACEF8422BD84D900759B4D /* ViewController.swift in Sources */,
 				50ACEF8222BD84D900759B4D /* AppDelegate.swift in Sources */,
@@ -294,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HamburguerMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +344,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mx.rosales.daniel.HamburguerMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HamburguerMenu/HamburguerMenu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HamburguerMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mx.rosales.daniel.HamburguerMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HamburguerMenu/HamburguerMenu-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

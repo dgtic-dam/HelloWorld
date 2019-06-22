@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HamburguerMenu
+//  prac2
 //
-//  Created by Infraestructura on 6/21/19.
+//  Created by Infraestructura on 6/22/19.
 //  Copyright © 2019 Dan Ros. All rights reserved.
 //
 
@@ -16,10 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        // Imprimer todas los nombres de familias de fuentes instaladas
-        for fontName in UIFont.familyNames {
-            print (fontName)
-        }
         return true
     }
 
