@@ -1,0 +1,771 @@
+ [
+  {
+  "entidad": "Aguascalientes",
+  "capital": "Aguascalientes",
+  "imagen": "aguascalientes",
+  "municipios": [{
+                 "nombre": "Aguascalientes",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Asientos",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Calvillo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Cosio",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "El Llano",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Jesus Maria",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  }, {
+  "entidad": "Baja California",
+  "capital": "Mexicali",
+  "imagen": "baja california",
+  "municipios": [{
+                 "nombre": "Mexicali",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Tijuana",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Tecate",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Rosarito",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  }, {
+  "entidad": "Baja California Sur",
+  "capital": "La Paz",
+  "imagen": "baja california sur",
+  "municipios": [{
+                 "nombre": "Comondu",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Mulege",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "La Paz",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Los Cabos",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Loreto",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  }, {
+  "entidad": "Campeche",
+  "capital": "Campeche",
+  "imagen": "campeche",
+  "municipios": [{
+                 "nombre": "Calkini",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Campeche",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Carmen",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Champoton",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Hecelchakan",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Coahuila de Zaragoza",
+  "capital": "Saltillo",
+  "imagen": "coahuila de zaragoza",
+  "municipios": [{
+                 "nombre": "Abasolo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Candela",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Escobedo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Frontera",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "General Cepeda",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Saltillo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  },
+  {
+  "entidad": "Colima",
+  "capital": "Colima",
+  "imagen": "colima",
+  "municipios": [{
+                 "nombre": "Armeria",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Colima",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Comala",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Coquimatlan",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Cuauhtemoc",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  },
+  
+  {
+  "entidad": "Chiapas",
+  "capital": "Tuxtla Gutiérrez",
+  "imagen": "chiapas",
+  "municipios": [{
+                 "nombre": "Altamirano",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Bellavista",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Comitan",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Francisco Leon",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Tuxtla Gutierrez",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  },
+  
+  {
+  "entidad": "Chihuahua",
+  "capital": "Chihuahua",
+  "imagen": "chihuahua",
+  "municipios": [{
+                 "nombre": "Ahumada",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Buenaventura",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Chihuahua",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Delicias",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }, {
+                 "nombre": "Galeana",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }]
+  },
+  {
+  "entidad": "Ciudad de México",
+  "capital": "",
+  "imagen": "distrito federal",
+  "municipios": [{
+                 "nombre": "Alvaro Obregon",
+                 "info": "Superficie (km²): 727 034\nPoblación (2016): 96,17\nDensidad de habitantes (km²): 7,34701000 - 01999"
+                 },
+                 {
+                 "nombre": "Azcapotzalco",
+                 "info": "Superficie (km²): 414 711\nPoblación (2016): 33,66\nDensidad de habitantes (km²): 12,63502000 - 02999"
+                 },
+                 {
+                 "nombre": "Benito Juarez",
+                 "info": "Superficie (km²): 385 439\nPoblación (2016): 26,63\nDensidad de habitantes (km²): 13,33103000 - 03999"
+                 },
+                 {
+                 "nombre": "Coyoacan",
+                 "info": "Superficie (km²): 620 416\nPoblación (2016): 54,40\nDensidad de habitantes (km²): 11,54504000 - 04999"
+                 },
+                 {
+                 "nombre": "Cuajimalpa",
+                 "info": "Superficie (km²): 186 391\nPoblación (2016): 74,58\nDensidad de habitantes (km²): 2,32805000 - 05999"
+                 }, {
+                 "nombre": "Cuauhtemoc",
+                 "info": "Superficie (km²): 531 831\nPoblación (2016): 32,40\nDensidad de habitantes (km²): 16,09006000 - 06999"
+                 },
+                 {
+                 "nombre": "Gustavo A. Madero",
+                 "info": "Superficie (km²): 1 185 772\nPoblación (2016): 94,07\nDensidad de habitantes (km²): 12,68307000 - 07999"
+                 },
+                 {
+                 "nombre": "Iztacalco",
+                 "info": "Superficie (km²): 384 326\nPoblación (2016): 23,30\nDensidad de habitantes (km²): 16,95308000 - 08999"
+                 }, {
+                 "nombre": "Iztapalapa",
+                 "info": "Superficie (km²): 1 815 786\nPoblación (2016): 117,00\nDensidad de habitantes (km²): 15,56309000 - 09999"
+                 },
+                 {
+                 "nombre": "Magdalena Contreras",
+                 "info": "Superficie (km²): 239 086\nPoblación (2016): 74,58\nDensidad de habitantes (km²): 3,06910000 - 10999"
+                 },
+                 {
+                 "nombre": "Miguel Hidalgo",
+                 "info": "Superficie (km²): 372 889\nPoblación (2016): 46,99\nDensidad de habitantes (km²): 7,52311000 - 11999"
+                 },
+                 {
+                 "nombre": "Milpa Alta",
+                 "info": "Superficie (km²): 130 582\nPoblación (2016): 228,41\nDensidad de habitantes (km²): 50712000 - 12999"
+                 },
+                 {
+                 "nombre": "Tlahuac",
+                 "info": "Superficie (km²): 360 265\nPoblación (2016): 85,34\nDensidad de habitantes (km²): 4,03213000 - 13999"
+                 },
+                 {
+                 "nombre": "Tlalpan",
+                 "info": "Superficie (km²): 650 567\nPoblación (2016): 312\nDensidad de habitantes (km²): 2,08514000 - 14999"
+                 },
+                 {
+                 "nombre": "Venustiano Carranza",
+                 "info": "Superficie (km²): 430 978\nPoblación (2016): 33,40\nDensidad de habitantes (km²): 13,39615000 - 15999"
+                 },
+                 {
+                 "nombre": "Xochimilco",
+                 "info": "Superficie (km²): 415 007\nPoblación (2016): 122,00\nDensidad de habitantes (km²): 3,42716000 - 16999"
+                 }
+                 ]
+  },
+  {
+  "entidad": "Durango",
+  "capital": "Durango",
+  "imagen": "durango",
+  "municipios": [{
+                 "nombre": "Canelas",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Durango",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Gomez Palacio",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Hidalgo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Inde",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Lerdo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Guanajuato",
+  "capital": "Guanajuato",
+  "imagen": "guanajuato",
+  "municipios": [{
+                 "nombre": "Abasolo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "San Miguel de Allende",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Celaya",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Dolores Hidalgo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Guanajuato",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Guerrero",
+  "capital": "Chilpancingo",
+  "imagen": "guerrero",
+  "municipios": [{
+                 "nombre": "Acapulco",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Atoyac",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Benito Juarez",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Chilpancingo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Iguala",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Hidalgo",
+  "capital": "Pachuca",
+  "imagen": "hidalgo",
+  "municipios": [{
+                 "nombre": "Actopan",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Cardonal",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Emiliano Zapata",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Mineral del Chico",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Pachuca",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Jalisco",
+  "capital": "Guadalajara",
+  "imagen": "jalisco",
+  "municipios": [{
+                 "nombre": "Arandas",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "La Barca",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Cocula",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Guadalajara",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Lagos de Moreno",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Estado de Mexico",
+  "capital": "Toluca",
+  "imagen": "estado de mexico",
+  "municipios": [{
+                 "nombre": "Almoloya de Juarez",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Chalco",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Ecatepec de Morelos",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Huixquilucan",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Ixtapaluca",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Toluca",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Michoacan de Ocampo",
+  "capital": "Morelia",
+  "imagen": "michoacan de ocampo",
+  "municipios": [{
+                 "nombre": "Apatzingan",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Buenavista",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Caracuaro",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Erongaricuaro",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Morelia",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Morelos",
+  "capital": "Cuernavaca",
+  "imagen": "morelos",
+  "municipios": [{
+                 "nombre": "Amacuzac",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Cuautla",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Cuernavaca",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Emiliano Zapata",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Huitzilac",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Nayarit",
+  "capital": "Tepic",
+  "imagen": "nayarit",
+  "municipios": [{
+                 "nombre": "Acaponeta",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Compostela",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Ixtlan del Rio",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Jala",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Tepic",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Nuevo Leon",
+  "capital": "Monterrey",
+  "imagen": "nuevo leon",
+  "municipios": [{
+                 "nombre": "Abasolo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Cadereyta Jimenez",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Doctor Arroyo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "San Pedro Garza Garcia",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Monterrey",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Oaxaca",
+  "capital": "Oaxaca",
+  "imagen": "oaxaca",
+  "municipios": [{
+                 "nombre": "Acatlan de Perez Figueroa",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Cosolapa",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "El Espinal",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Guelatao de Juarez",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Oaxaca",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Puebla",
+  "capital": "Puebla",
+  "imagen": "puebla",
+  "municipios": [{
+                 "nombre": "Acatzingo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Coatepec",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Esperanza",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Huejotzingo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Izucar de Matamoros",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Puebla",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Querétaro",
+  "capital": "Querétaro",
+  "imagen": "queretaro",
+  "municipios": [{
+                 "nombre": "Amealco de Bonfil",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Corregidora",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Ezequiel Montes",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Pedro Escobedo",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Queretaro",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "San Juan del Rio",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  },
+  {
+  "entidad": "Quintana Roo",
+  "capital": "Chetumal",
+  "imagen": "quintana roo",
+  "municipios": [{
+                 "nombre": "Cozumel",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Felipe Carrillo Puerto",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Isla Mujeres",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Benito Juarez",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Bacalar",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Chetumal",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 },
+                 {
+                 "nombre": "Tulum",
+                 "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis neque velit, eget venenatis massa dignissim a. Mauris faucibus consequat ligula quis scelerisque."
+                 }
+                 ]
+  }, {
+  "entidad": "San Luis Potosí",
+  "capital": "San Luis Potosí",
+  "imagen": "san luis potosi",
+  "municipios": [
+                 "Ahualulco",
+                 "Cardenas",
+                 "Ebano",
+                 "Guadalcazar",
+                 "Huehuetlan",
+                 "Lagunillas",
+                 "Matehuala",
+                 "San Luis Potosi"
+                 ]
+  },
+  {
+  "entidad": "Sinaloa",
+  "imagen": "sinaloa",
+  "capital": "Culiacán",
+  "municipios": [
+                 "Ahome",
+                 "Badiraguato",
+                 "Culiacan",
+                 "Escuinapa",
+                 "Guasave",
+                 "Mazatlan",
+                 "Rosario"
+                 ]
+  },
+  {
+  "entidad": "Sonora",
+  "imagen": "sonora",
+  "capital": "Hermosillo",
+  "municipios": [
+                 "Agua Prieta",
+                 "Benjamin Hill",
+                 "Caborca",
+                 "Divisaderos",
+                 "Etchojoa",
+                 "Fronteras",
+                 "Granados",
+                 "Hermosillo"
+                 ]
+  },
+  {
+  "entidad": "Tabasco",
+  "imagen": "tabasco",
+  "capital": "Villahermosa",
+  "municipios": [
+                 "Balancan",
+                 "Centla",
+                 "Emiliano Zapata",
+                 "Huimanguillo",
+                 "Jalapa",
+                 "Villa hermosa"
+                 ]
+  }, {
+  "entidad": "Tamaulipas",
+  "imagen": "tamaulipas",
+  "capital": "Ciudad Victoria",
+  "municipios": [
+                 "Aldama",
+                 "Bustamante",
+                 "Matamoros",
+                 "Nuevo Laredo",
+                 "Reynosa",
+                 "Cd. Victoria"
+                 ]
+  },
+  {
+  "entidad": "Tlaxcala",
+  "imagen": "tlaxcala",
+  "capital": "Tlaxcala",
+  "municipios": [
+                 "Apizaco",
+                 "Calpulalpan",
+                 "Domingo Arenas",
+                 "Huamantla",
+                 "Ixtenco",
+                 "Juan Cuamatzi",
+                 "Nativitas",
+                 "Tlaxcala"
+                 ]
+  },
+  {
+  "entidad": "Veracruz de Ignacio de la Llave",
+  "imagen": "veracruz de ignacio de la llave",
+  "capital": "Xalapa",
+  "municipios": [
+                 "Acayucan",
+                 "Cordoba",
+                 "Espinal",
+                 "Fortin",
+                 "Huatusco",
+                 "Ignacio de la Llave",
+                 "Maltrata",
+                 "Xalapa",
+                 "Veracruz"
+                 ]
+  },
+  {
+  "entidad": "Yucatan",
+  "imagen": "Mérida",
+  "capital": "yucatan",
+  "municipios": [
+                 "Acanceh",
+                 "Bokoba",
+                 "Celestun",
+                 "Dzan",
+                 "Espita",
+                 "Halacho",
+                 "Ixil",
+                 "Kopoma",
+                 "Merida"
+                 ]
+  },
+  {
+  "entidad": "Zacatecas",
+  "imagen": "zacatecas",
+  "capital": "Zacatecas",
+  "municipios": [
+                 "Apulco",
+                 "Benito Juarez",
+                 "Concepcion del Oro",
+                 "Fresnillo",
+                 "Genaro Codina",
+                 "Huanusco",
+                 "Jerez",
+                 "Luis Moya",
+                 "Melchor Ocampo",
+                 "Ojocaliente",
+                 "Panuco",
+                 "Rio Grande",
+                 "Sombrerete",
+                 "Tepechitlan",
+                 "Villanueva",
+                 "Zacatecas"
+                 ]
+  }
+  ]
