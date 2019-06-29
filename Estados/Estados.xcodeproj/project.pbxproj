@@ -12,6 +12,15 @@
 		507D5C6C22AC355400ED1BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507D5C6A22AC355400ED1BF6 /* Main.storyboard */; };
 		507D5C6E22AC355D00ED1BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507D5C6D22AC355D00ED1BF6 /* Assets.xcassets */; };
 		507D5C7122AC355D00ED1BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507D5C6F22AC355D00ED1BF6 /* LaunchScreen.storyboard */; };
+		50BC0C0C22C6BFE3001E294B /* estados.json in Resources */ = {isa = PBXBuildFile; fileRef = 50BC0C0B22C6BFE3001E294B /* estados.json */; };
+		50BC0C0E22C6C255001E294B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC0C0D22C6C255001E294B /* TableViewController.swift */; };
+		50BC0C1022C6C4F2001E294B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC0C0F22C6C4F2001E294B /* DataSource.swift */; };
+		50BC0C1322C6D93C001E294B /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC0C1122C6D93C001E294B /* iPad.storyboard */; };
+		50BC0C1522C6E1F2001E294B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC0C1422C6E1F2001E294B /* CollectionViewController.swift */; };
+		50BC0C1822C6E560001E294B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC0C1622C6E560001E294B /* CollectionViewCell.swift */; };
+		50BC0C1922C6E560001E294B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BC0C1722C6E560001E294B /* CollectionViewCell.xib */; };
+		50BC0C1C22C6F6A9001E294B /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC0C1A22C6F6A9001E294B /* Common.storyboard */; };
+		50BC0C1E22C6F769001E294B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC0C1D22C6F769001E294B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		507D5C6D22AC355D00ED1BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507D5C7022AC355D00ED1BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507D5C7222AC355D00ED1BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BC0C0B22C6BFE3001E294B /* estados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = estados.json; path = ../../Assets/estados.json; sourceTree = "<group>"; };
+		50BC0C0D22C6C255001E294B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		50BC0C0F22C6C4F2001E294B /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		50BC0C1222C6D93C001E294B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPad.storyboard; sourceTree = "<group>"; };
+		50BC0C1422C6E1F2001E294B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		50BC0C1622C6E560001E294B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		50BC0C1722C6E560001E294B /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		50BC0C1B22C6F6A9001E294B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Common.storyboard; sourceTree = "<group>"; };
+		50BC0C1D22C6F769001E294B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +72,21 @@
 		507D5C6522AC355400ED1BF6 /* Estados */ = {
 			isa = PBXGroup;
 			children = (
+				50BC0C0B22C6BFE3001E294B /* estados.json */,
 				507D5C6622AC355400ED1BF6 /* AppDelegate.swift */,
 				507D5C6822AC355400ED1BF6 /* ViewController.swift */,
 				507D5C6A22AC355400ED1BF6 /* Main.storyboard */,
 				507D5C6D22AC355D00ED1BF6 /* Assets.xcassets */,
 				507D5C6F22AC355D00ED1BF6 /* LaunchScreen.storyboard */,
 				507D5C7222AC355D00ED1BF6 /* Info.plist */,
+				50BC0C0D22C6C255001E294B /* TableViewController.swift */,
+				50BC0C0F22C6C4F2001E294B /* DataSource.swift */,
+				50BC0C1122C6D93C001E294B /* iPad.storyboard */,
+				50BC0C1422C6E1F2001E294B /* CollectionViewController.swift */,
+				50BC0C1622C6E560001E294B /* CollectionViewCell.swift */,
+				50BC0C1722C6E560001E294B /* CollectionViewCell.xib */,
+				50BC0C1A22C6F6A9001E294B /* Common.storyboard */,
+				50BC0C1D22C6F769001E294B /* DetailViewController.swift */,
 			);
 			path = Estados;
 			sourceTree = "<group>";
@@ -124,7 +151,11 @@
 			files = (
 				507D5C7122AC355D00ED1BF6 /* LaunchScreen.storyboard in Resources */,
 				507D5C6E22AC355D00ED1BF6 /* Assets.xcassets in Resources */,
+				50BC0C1922C6E560001E294B /* CollectionViewCell.xib in Resources */,
+				50BC0C1C22C6F6A9001E294B /* Common.storyboard in Resources */,
 				507D5C6C22AC355400ED1BF6 /* Main.storyboard in Resources */,
+				50BC0C1322C6D93C001E294B /* iPad.storyboard in Resources */,
+				50BC0C0C22C6BFE3001E294B /* estados.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				507D5C6922AC355400ED1BF6 /* ViewController.swift in Sources */,
+				50BC0C0E22C6C255001E294B /* TableViewController.swift in Sources */,
+				50BC0C1822C6E560001E294B /* CollectionViewCell.swift in Sources */,
+				50BC0C1022C6C4F2001E294B /* DataSource.swift in Sources */,
 				507D5C6722AC355400ED1BF6 /* AppDelegate.swift in Sources */,
+				50BC0C1522C6E1F2001E294B /* CollectionViewController.swift in Sources */,
+				50BC0C1E22C6F769001E294B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +193,22 @@
 				507D5C7022AC355D00ED1BF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50BC0C1122C6D93C001E294B /* iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50BC0C1222C6D93C001E294B /* Base */,
+			);
+			name = iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		50BC0C1A22C6F6A9001E294B /* Common.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50BC0C1B22C6F6A9001E294B /* Base */,
+			);
+			name = Common.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.rosales.daniel.Estados;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -308,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.rosales.daniel.Estados;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
