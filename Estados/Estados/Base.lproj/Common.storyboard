@@ -1,29 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWf-se-4A8">
-    <device id="retina6_1" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vjG-Ps-vKV">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Detail View Controller-->
-        <scene sceneID="eND-Bh-VhR">
+        <scene sceneID="2oe-xj-y1B">
             <objects>
-                <viewController id="iWf-se-4A8" customClass="DetailViewController" customModule="Estados" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gVz-29-hlf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="vjG-Ps-vKV" customClass="DetailViewController" customModule="Estados" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mJ2-GI-md0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ym2-ss-Gma"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mq7-0W-Aws">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="a6r-Eq-Ffs"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ahU-F0-RfC">
+                                <rect key="frame" x="26" y="50" width="323" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7ZF-AW-NWG">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="97"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="distrito federal.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzY-mL-roF">
+                                                <rect key="frame" x="0.0" y="0.0" width="156.5" height="97"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CIUDAD DE MÉXICO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uE-mm-kTR">
+                                                <rect key="frame" x="166.5" y="0.0" width="156.5" height="97"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="principales municipios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbj-yG-KLn">
+                                        <rect key="frame" x="0.0" y="112" width="323" height="21"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDx-yX-wC3">
+                                        <rect key="frame" x="0.0" y="148" width="323" height="223"/>
+                                    </pickerView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XEA-qa-Tdo">
+                                        <rect key="frame" x="0.0" y="386" width="323" height="173"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="Zwi-X6-1YX"/>
+                                            <constraint firstAttribute="height" constant="160" id="hzF-Ly-Qmc"/>
+                                        </constraints>
+                                        <string key="text">Población (2016)620 416
+Superficie (km²)54,40
+Densidad de habitantes (km²)11,545
+Código postal04000 - 04999</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phK-VA-OMR">
+                                        <rect key="frame" x="0.0" y="574" width="323" height="33"/>
+                                        <state key="normal" title="Mas Información"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ahU-F0-RfC" firstAttribute="top" secondItem="mJ2-GI-md0" secondAttribute="bottom" constant="30" id="FsC-si-rda"/>
+                            <constraint firstItem="ym2-ss-Gma" firstAttribute="top" secondItem="ahU-F0-RfC" secondAttribute="bottom" constant="10" id="bxr-5w-Lvt"/>
+                            <constraint firstItem="ahU-F0-RfC" firstAttribute="leading" secondItem="Mq7-0W-Aws" secondAttribute="leadingMargin" constant="10" id="gkn-hm-5Sd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ahU-F0-RfC" secondAttribute="trailing" constant="10" id="mqC-ah-kah"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="17M-Os-soN"/>
                     </view>
+                    <connections>
+                        <outlet property="ivEscudo" destination="jzY-mL-roF" id="g7g-wu-ppX"/>
+                        <outlet property="lblEntidad" destination="8uE-mm-kTR" id="j4P-Et-41Z"/>
+                        <outlet property="pvMunicipios" destination="TDx-yX-wC3" id="Roy-de-lRb"/>
+                        <outlet property="tvInfoMun" destination="XEA-qa-Tdo" id="kV6-0I-QFc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rvM-j5-NJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFu-kE-0qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-77" y="111"/>
+            <point key="canvasLocation" x="-608.79999999999995" y="-331.48425787106447"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="distrito federal.png" width="132" height="94"/>
+    </resources>
 </document>
