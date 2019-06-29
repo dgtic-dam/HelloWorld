@@ -20,11 +20,19 @@ class DetailViewController: UIViewController,  UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var tvInfoMun: UITextView!
     @IBOutlet weak var lblEntidad: UILabel!
     @IBOutlet weak var pvMunicipios: UIPickerView!
+
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
+        let destino = segue.destination as! VideoController
+        //TODO: Obtener el nombredel video del diccionario o algún lado
+        //........
+        destino.videoNom = "Comex-Omnilife"
+    }
     
     @IBAction func btnMasInfoTouch(_ sender: Any) {
         if tieneVideo{
             print("tiene video")
             // TODO: agregar otro controller y ejecutar el segue
+            performSegue(withIdentifier: "video", sender: nil)
         }
         else {
             print("NO tiene video")
@@ -36,6 +44,7 @@ class DetailViewController: UIViewController,  UIPickerViewDelegate, UIPickerVie
                 let urlString = "https://es.wikipedia.org/wiki/" + (nomEncode ?? "") //safe unwrapping with ??
                 print(urlString)
                 if let url = URL(string: urlString){
+                    //UIApplication es una función del sistema operativo
                     UIApplication.shared.open(url, options: [:]) { (success) in
                         if success {
                             self.navigationController?.popViewController(animated: true)

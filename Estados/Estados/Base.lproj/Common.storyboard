@@ -87,11 +87,20 @@ Código postal04000 - 04999</string>
                         <outlet property="lblEntidad" destination="8uE-mm-kTR" id="j4P-Et-41Z"/>
                         <outlet property="pvMunicipios" destination="TDx-yX-wC3" id="Roy-de-lRb"/>
                         <outlet property="tvInfoMun" destination="XEA-qa-Tdo" id="kV6-0I-QFc"/>
+                        <segue destination="sME-nJ-JWF" kind="show" identifier="video" id="gLX-0M-JJV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFu-kE-0qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-608.79999999999995" y="-331.48425787106447"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="Bgr-ed-Dl3">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="sME-nJ-JWF" customClass="VideoController" customModule="Estados" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIk-YS-ZzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="-331"/>
         </scene>
     </scenes>
     <resources>

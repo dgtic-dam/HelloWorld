@@ -21,6 +21,10 @@
 		50BC0C1922C6E560001E294B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BC0C1722C6E560001E294B /* CollectionViewCell.xib */; };
 		50BC0C1C22C6F6A9001E294B /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC0C1A22C6F6A9001E294B /* Common.storyboard */; };
 		50BC0C1E22C6F769001E294B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC0C1D22C6F769001E294B /* DetailViewController.swift */; };
+		50C3A67F22C7D6150014AF22 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C3A67D22C7D6150014AF22 /* AVKit.framework */; };
+		50C3A68022C7D6150014AF22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C3A67E22C7D6150014AF22 /* AVFoundation.framework */; };
+		50C3A68222C7D6BD0014AF22 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3A68122C7D6BD0014AF22 /* VideoController.swift */; };
+		50C3A68422C7DEF70014AF22 /* Comex-Omnilife.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 50C3A68322C7DEF70014AF22 /* Comex-Omnilife.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		50BC0C1722C6E560001E294B /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		50BC0C1B22C6F6A9001E294B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Common.storyboard; sourceTree = "<group>"; };
 		50BC0C1D22C6F769001E294B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		50C3A67D22C7D6150014AF22 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		50C3A67E22C7D6150014AF22 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50C3A68122C7D6BD0014AF22 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		50C3A68322C7DEF70014AF22 /* Comex-Omnilife.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comex-Omnilife.mp4"; path = "../../Assets/Comex-Omnilife.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C3A67F22C7D6150014AF22 /* AVKit.framework in Frameworks */,
+				50C3A68022C7D6150014AF22 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +68,7 @@
 			children = (
 				507D5C6522AC355400ED1BF6 /* Estados */,
 				507D5C6422AC355400ED1BF6 /* Products */,
+				50C3A67C22C7D6140014AF22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +83,7 @@
 		507D5C6522AC355400ED1BF6 /* Estados */ = {
 			isa = PBXGroup;
 			children = (
+				50C3A68322C7DEF70014AF22 /* Comex-Omnilife.mp4 */,
 				50BC0C0B22C6BFE3001E294B /* estados.json */,
 				507D5C6622AC355400ED1BF6 /* AppDelegate.swift */,
 				507D5C6822AC355400ED1BF6 /* ViewController.swift */,
@@ -87,8 +99,18 @@
 				50BC0C1722C6E560001E294B /* CollectionViewCell.xib */,
 				50BC0C1A22C6F6A9001E294B /* Common.storyboard */,
 				50BC0C1D22C6F769001E294B /* DetailViewController.swift */,
+				50C3A68122C7D6BD0014AF22 /* VideoController.swift */,
 			);
 			path = Estados;
+			sourceTree = "<group>";
+		};
+		50C3A67C22C7D6140014AF22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C3A67E22C7D6150014AF22 /* AVFoundation.framework */,
+				50C3A67D22C7D6150014AF22 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +176,7 @@
 				50BC0C1922C6E560001E294B /* CollectionViewCell.xib in Resources */,
 				50BC0C1C22C6F6A9001E294B /* Common.storyboard in Resources */,
 				507D5C6C22AC355400ED1BF6 /* Main.storyboard in Resources */,
+				50C3A68422C7DEF70014AF22 /* Comex-Omnilife.mp4 in Resources */,
 				50BC0C1322C6D93C001E294B /* iPad.storyboard in Resources */,
 				50BC0C0C22C6BFE3001E294B /* estados.json in Resources */,
 			);
@@ -169,6 +192,7 @@
 				507D5C6922AC355400ED1BF6 /* ViewController.swift in Sources */,
 				50BC0C0E22C6C255001E294B /* TableViewController.swift in Sources */,
 				50BC0C1822C6E560001E294B /* CollectionViewCell.swift in Sources */,
+				50C3A68222C7D6BD0014AF22 /* VideoController.swift in Sources */,
 				50BC0C1022C6C4F2001E294B /* DataSource.swift in Sources */,
 				507D5C6722AC355400ED1BF6 /* AppDelegate.swift in Sources */,
 				50BC0C1522C6E1F2001E294B /* CollectionViewController.swift in Sources */,
