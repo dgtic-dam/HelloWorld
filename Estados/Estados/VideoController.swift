@@ -25,7 +25,7 @@ class VideoController: AVPlayerViewController {
         if let urlVideo = Bundle.main.url(forResource: videoNom, withExtension: "mp4"){
             self.player = AVPlayer(url: urlVideo)
             self.player?.play()
-            self.showsPlaybackControls = true
+            //self.showsPlaybackControls = true
         }
         
     }
