@@ -1,4 +1,4 @@
- [
+[
   {
   "entidad": "Aguascalientes",
   "capital": "Aguascalientes",
@@ -731,8 +731,8 @@
   },
   {
   "entidad": "Yucatan",
-  "imagen": "Mérida",
-  "capital": "yucatan",
+  "imagen": "yucatan",
+  "capital": "Mérida",
   "municipios": [
                  "Acanceh",
                  "Bokoba",

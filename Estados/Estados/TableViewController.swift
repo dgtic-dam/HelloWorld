@@ -9,7 +9,14 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
+    var items:[[String:Any?]] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        items = DataSource.getJsonArray()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,24 +30,29 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
 
-    /*
+  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let item = items[indexPath.row]
+        if let edoNom = item["entidad"] as? String {
+            cell.textLabel?.text = edoNom
+        }
+        if let imgNom = item["imagen"] as? String{
+            cell.imageView?.image = UIImage(named: imgNom)
+        }
+        if let capNom = item["capital"] as? String {
+            cell.detailTextLabel?.text = capNom
+        }
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

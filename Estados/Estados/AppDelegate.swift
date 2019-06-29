@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Identificar dispositivo, instanciar otro storyboard
+        if UIDevice.current.userInterfaceIdiom == .pad{ //.phone .watch
+            let storyBoard = UIStoryboard(name: "iPad", bundle:nil)
+            //presentar el viewController inicial, como view controller raíz
+            window?.rootViewController = storyBoard.instantiateInitialViewController()
+        }
         return true
     }
 
