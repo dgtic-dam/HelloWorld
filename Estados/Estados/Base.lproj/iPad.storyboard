@@ -32,9 +32,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                                 <size key="customSize" width="200" height="200"/>
-                                <connections>
-                                    <segue destination="kNU-3X-wKb" kind="show" id="4xS-ff-kdc"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tqj-xa-mEx">
@@ -51,6 +48,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="5Xp-R7-Y2J"/>
+                    <connections>
+                        <segue destination="kNU-3X-wKb" kind="show" identifier="detail" id="6yR-hf-ARK"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oz9-Vz-NLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

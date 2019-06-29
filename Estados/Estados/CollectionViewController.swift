@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
-    var items:[[String:Any?]] = []
+    var items:[[String:Any]] = []
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -30,15 +30,22 @@ class CollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        let destino = segue.destination as! DetailViewController
+        //Conocer el  indice de item seleccionada
+        let indexPath = self.collectionView.indexPathsForSelectedItems?.first
+        //obtener el diccionario del arreglo, en la posición seleccionada
+        let myDicctionary = items[indexPath!.row]
+        //asignamos el diccionario, a la property del controller destino
+        destino.infoEstado = myDicctionary
     }
-    */
+ 
 
     // MARK: UICollectionViewDataSource
 
@@ -62,6 +69,11 @@ class CollectionViewController: UICollectionViewController {
        
     
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print ("selected")
+        performSegue(withIdentifier: "detail", sender: nil)
     }
 
     // MARK: UICollectionViewDelegate
