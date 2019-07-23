@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cnm-Kb-jXe">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OverlockSC-Regular.ttf">
+            <string>OverlockSC-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lgbtiqa" translatesAutoresizingMaskIntoConstraints="NO" id="Oqh-QX-ktJ">
+                                <rect key="frame" x="-20" y="0.0" width="360" height="588"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7Gq-qT-5ra" appends="YES" id="RBq-zp-uj3"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3m-ab-uf9">
+                                <rect key="frame" x="39" y="184" width="242" height="200"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1H-QG-6gd" userLabel="txtCorreo">
+                                        <rect key="frame" x="20" y="36" width="202" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-oi-d8Z">
+                                        <rect key="frame" x="50" y="157" width="142" height="33"/>
+                                        <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                        <color key="tintColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Entrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgf-uG-fey"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rjj-xz-40X" userLabel="txtPass">
+                                        <rect key="frame" x="20" y="102" width="202" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhA-7g-kGU">
+                                        <rect key="frame" x="101" y="10" width="40" height="21"/>
+                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBu-eU-cNd">
+                                        <rect key="frame" x="77.5" y="76" width="87" height="21"/>
+                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14400577545166016" green="0.86273956298828125" blue="0.72155338525772095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="N1H-QG-6gd" secondAttribute="trailing" constant="20" id="1m4-vf-3bf"/>
+                                    <constraint firstItem="ZhA-7g-kGU" firstAttribute="top" secondItem="R3m-ab-uf9" secondAttribute="top" constant="10" id="1zY-KC-Pvm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bwc-oi-d8Z" secondAttribute="bottom" constant="10" id="5T8-jI-l8e"/>
+                                    <constraint firstItem="Rjj-xz-40X" firstAttribute="top" secondItem="sBu-eU-cNd" secondAttribute="bottom" constant="5" id="6TR-Qi-Vi9"/>
+                                    <constraint firstItem="N1H-QG-6gd" firstAttribute="leading" secondItem="R3m-ab-uf9" secondAttribute="leading" constant="20" id="9fk-Nj-2Y0"/>
+                                    <constraint firstItem="Rjj-xz-40X" firstAttribute="leading" secondItem="R3m-ab-uf9" secondAttribute="leading" constant="20" id="EQH-O0-3cv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rjj-xz-40X" secondAttribute="trailing" constant="20" id="GNG-pQ-ofQ"/>
+                                    <constraint firstItem="Rjj-xz-40X" firstAttribute="centerX" secondItem="R3m-ab-uf9" secondAttribute="centerX" id="HPq-za-BgX"/>
+                                    <constraint firstItem="sBu-eU-cNd" firstAttribute="top" secondItem="N1H-QG-6gd" secondAttribute="bottom" constant="10" id="KRo-ia-v7n"/>
+                                    <constraint firstItem="Bwc-oi-d8Z" firstAttribute="leading" secondItem="R3m-ab-uf9" secondAttribute="leading" constant="50" id="Lmo-EN-ahA"/>
+                                    <constraint firstItem="N1H-QG-6gd" firstAttribute="centerX" secondItem="R3m-ab-uf9" secondAttribute="centerX" id="MmG-oC-lYw"/>
+                                    <constraint firstItem="ZhA-7g-kGU" firstAttribute="centerX" secondItem="R3m-ab-uf9" secondAttribute="centerX" id="Mrc-wy-5Ai"/>
+                                    <constraint firstAttribute="height" constant="200" id="Mzn-4V-0R5"/>
+                                    <constraint firstItem="Bwc-oi-d8Z" firstAttribute="centerX" secondItem="R3m-ab-uf9" secondAttribute="centerX" id="SFS-HU-Sl6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bwc-oi-d8Z" secondAttribute="trailing" constant="50" id="dG9-Fb-Usw"/>
+                                    <constraint firstItem="N1H-QG-6gd" firstAttribute="top" secondItem="ZhA-7g-kGU" secondAttribute="bottom" constant="5" id="r9C-1F-Stx"/>
+                                    <constraint firstItem="sBu-eU-cNd" firstAttribute="centerX" secondItem="R3m-ab-uf9" secondAttribute="centerX" id="s20-3h-ZqH"/>
+                                    <constraint firstAttribute="width" constant="242" id="xqr-Qa-cIg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R3m-ab-uf9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6pf-pm-xtE"/>
+                            <constraint firstItem="Oqh-QX-ktJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="EbS-as-1Mf"/>
+                            <constraint firstItem="Oqh-QX-ktJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="P9n-Iz-nsH"/>
+                            <constraint firstItem="Oqh-QX-ktJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="UkC-qF-eAe"/>
+                            <constraint firstItem="Oqh-QX-ktJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-20" id="fh8-Iq-5As"/>
+                            <constraint firstItem="R3m-ab-uf9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lze-NE-00A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ResizeY" destination="lze-NE-00A" id="jA9-E8-QkO"/>
+                        <outlet property="txtCorreo" destination="N1H-QG-6gd" id="8mw-vE-C6I"/>
+                        <segue destination="Cnm-Kb-jXe" kind="presentation" identifier="LoginOK" id="7Yo-po-P7H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7Gq-qT-5ra">
+                    <connections>
+                        <action selector="TapInView:" destination="BYZ-38-t0r" id="pAB-Au-ebU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="48.75" y="20.070422535211268"/>
+        </scene>
+        <!--Sitio web-->
+        <scene sceneID="E7S-Qa-4jS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khT-uq-PrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="12O-5O-1aH" customClass="webViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="153-sK-Q8k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4U-cB-lOA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="A4U-cB-lOA" secondAttribute="bottom" id="4fb-Q5-W9V"/>
+                            <constraint firstItem="A4U-cB-lOA" firstAttribute="trailing" secondItem="1vz-Ve-2XS" secondAttribute="trailing" id="8K5-by-Sq1"/>
+                            <constraint firstItem="A4U-cB-lOA" firstAttribute="centerX" secondItem="153-sK-Q8k" secondAttribute="centerX" id="IoD-IL-8Dv"/>
+                            <constraint firstItem="A4U-cB-lOA" firstAttribute="centerY" secondItem="153-sK-Q8k" secondAttribute="centerY" id="U2j-k0-Er2"/>
+                            <constraint firstItem="A4U-cB-lOA" firstAttribute="leading" secondItem="1vz-Ve-2XS" secondAttribute="leading" id="YEQ-LQ-B4A"/>
+                            <constraint firstItem="A4U-cB-lOA" firstAttribute="top" secondItem="153-sK-Q8k" secondAttribute="top" id="ihb-4r-ZmL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1vz-Ve-2XS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sitio web" id="jBf-cj-C0J"/>
+                    <navigationItem key="navigationItem" title="Sitio web" id="5Ps-ft-PA4">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="YoH-ef-igm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webPage" destination="A4U-cB-lOA" id="l0W-qr-am7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4335" y="-306.33802816901408"/>
+        </scene>
+        <!--Diary View Controller-->
+        <scene sceneID="mBS-lG-add">
+            <objects>
+                <viewController id="ejg-YA-2Lq" customClass="DiaryViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkb-Ia-6Qn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lgbtiqa" translatesAutoresizingMaskIntoConstraints="NO" id="okf-JL-Tvd">
+                                <rect key="frame" x="-20" y="-10" width="360" height="588"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1KP-lA-dTD">
+                                <rect key="frame" x="5" y="84" width="310" height="405"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ED-An-iHO">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="372"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P69-YM-SJN">
+                                                <rect key="frame" x="134" y="20" width="42.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aig-Rg-3sx" userLabel="txtFecha">
+                                                <rect key="frame" x="30" y="41" width="250" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Descripción de actividad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrM-J3-9WA" userLabel="Descripción de actividad">
+                                                <rect key="frame" x="64" y="81" width="182.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2y8-wh-xab">
+                                                <rect key="frame" x="30" y="107" width="250" height="219"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Ern-lF-txe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riJ-Fr-pQp">
+                                                <rect key="frame" x="30" y="334" width="250" height="33"/>
+                                                <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                                <color key="tintColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Registar emoción &gt;">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXg-Jr-SJp"/>
+                                                    <segue destination="hzT-Qf-Ijl" kind="show" id="Crk-eR-PTR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.14400577549999999" green="0.86273956299999999" blue="0.72155338530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Aig-Rg-3sx" firstAttribute="top" secondItem="P69-YM-SJN" secondAttribute="bottom" constant="5" id="4Gu-xX-kxB"/>
+                                            <constraint firstItem="2y8-wh-xab" firstAttribute="leading" secondItem="1ED-An-iHO" secondAttribute="leading" constant="30" id="68R-xV-WgV"/>
+                                            <constraint firstItem="Aig-Rg-3sx" firstAttribute="top" secondItem="P69-YM-SJN" secondAttribute="bottom" id="DzN-IR-a96"/>
+                                            <constraint firstItem="riJ-Fr-pQp" firstAttribute="top" secondItem="2y8-wh-xab" secondAttribute="bottom" constant="8" symbolic="YES" id="Hu9-Ay-F4F"/>
+                                            <constraint firstAttribute="trailing" secondItem="riJ-Fr-pQp" secondAttribute="trailing" constant="30" id="KMw-Kc-Yug"/>
+                                            <constraint firstItem="Aig-Rg-3sx" firstAttribute="leading" secondItem="1ED-An-iHO" secondAttribute="leading" constant="30" id="KPa-WS-v2a"/>
+                                            <constraint firstItem="riJ-Fr-pQp" firstAttribute="centerX" secondItem="1ED-An-iHO" secondAttribute="centerX" id="Me7-wC-rHq"/>
+                                            <constraint firstItem="P69-YM-SJN" firstAttribute="top" secondItem="1ED-An-iHO" secondAttribute="top" constant="20" id="PCc-bl-z03"/>
+                                            <constraint firstItem="P69-YM-SJN" firstAttribute="centerX" secondItem="1ED-An-iHO" secondAttribute="centerX" id="PX6-iH-c5o"/>
+                                            <constraint firstItem="LrM-J3-9WA" firstAttribute="top" secondItem="Aig-Rg-3sx" secondAttribute="bottom" constant="10" id="SX1-Cb-v7f"/>
+                                            <constraint firstItem="LrM-J3-9WA" firstAttribute="centerX" secondItem="1ED-An-iHO" secondAttribute="centerX" id="arz-lz-vTd"/>
+                                            <constraint firstAttribute="bottom" secondItem="riJ-Fr-pQp" secondAttribute="bottom" constant="5" id="b88-CH-2XI"/>
+                                            <constraint firstItem="2y8-wh-xab" firstAttribute="top" secondItem="LrM-J3-9WA" secondAttribute="bottom" constant="5" id="eXq-Xr-OJs"/>
+                                            <constraint firstAttribute="trailing" secondItem="2y8-wh-xab" secondAttribute="trailing" constant="30" id="l4h-ty-23F"/>
+                                            <constraint firstItem="riJ-Fr-pQp" firstAttribute="leading" secondItem="1ED-An-iHO" secondAttribute="leading" constant="30" id="oXw-hF-bT5"/>
+                                            <constraint firstItem="2y8-wh-xab" firstAttribute="centerX" secondItem="1ED-An-iHO" secondAttribute="centerX" id="xNs-eT-HWA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aig-Rg-3sx" secondAttribute="trailing" constant="30" id="y3o-eJ-9tP"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-0P-cKA">
+                                        <rect key="frame" x="0.0" y="372" width="310" height="33"/>
+                                        <color key="backgroundColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                        <color key="tintColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Guardar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUm-ev-hQD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1KP-lA-dTD" firstAttribute="top" secondItem="Vc0-j5-Zid" secondAttribute="top" constant="20" id="Rda-ch-ow4"/>
+                            <constraint firstItem="1KP-lA-dTD" firstAttribute="bottom" secondItem="Vc0-j5-Zid" secondAttribute="bottom" constant="-30" id="XtS-Ah-b8m"/>
+                            <constraint firstItem="1KP-lA-dTD" firstAttribute="centerY" secondItem="fkb-Ia-6Qn" secondAttribute="centerY" id="e2h-dU-Xf3"/>
+                            <constraint firstItem="Vc0-j5-Zid" firstAttribute="trailing" secondItem="1KP-lA-dTD" secondAttribute="trailing" constant="5" id="k8X-8H-hHc"/>
+                            <constraint firstItem="1KP-lA-dTD" firstAttribute="centerX" secondItem="fkb-Ia-6Qn" secondAttribute="centerX" id="tyE-9e-p2L"/>
+                            <constraint firstItem="1KP-lA-dTD" firstAttribute="leading" secondItem="Vc0-j5-Zid" secondAttribute="leading" constant="5" id="uNP-SO-Bwr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vc0-j5-Zid"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fud-dV-M6p"/>
+                    <connections>
+                        <outlet property="dateTextField" destination="Aig-Rg-3sx" id="ufR-62-F6Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSL-jY-iXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3787.5" y="370.77464788732397"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fde-a2-XBi">
+            <objects>
+                <viewController id="hzT-Qf-Ijl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d5r-WX-aw7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lgbtiqa" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-qn-YIk">
+                                <rect key="frame" x="-20" y="-10" width="360" height="588"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2gV-mJ-rMI">
+                                <rect key="frame" x="5" y="69" width="310" height="403"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eM7-c7-hDX">
+                                        <rect key="frame" x="50" y="0.0" width="210" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xqe-uk-2AD">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy-11" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyB-MQ-HqS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="NV4-hl-h3s"/>
+                                                            <constraint firstAttribute="height" constant="50" id="xSv-NH-Pev"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felicidad" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcU-fA-EE2">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="10"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lab-H0-LvV">
+                                                <rect key="frame" x="80" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="BEB-ou-yjQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="UWX-Vg-Jmo"/>
+                                                            <constraint firstAttribute="width" constant="50" id="aNT-UC-wCf"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tristeza" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doJ-1M-pIK">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kTm-Cj-GCK">
+                                                <rect key="frame" x="160" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crying" translatesAutoresizingMaskIntoConstraints="NO" id="fB6-AJ-61c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="gay-yg-fVR"/>
+                                                            <constraint firstAttribute="height" constant="50" id="ryg-3y-UL5"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melancolía" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDZ-JT-sSr">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AOc-dz-QU0">
+                                        <rect key="frame" x="50" y="101" width="210" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="knO-Dp-IDt">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calm" translatesAutoresizingMaskIntoConstraints="NO" id="UKj-RQ-Z5M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="4An-fS-XCy"/>
+                                                            <constraint firstAttribute="width" constant="50" id="eGo-4K-m6Y"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calmado" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWl-pk-zgQ">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OTG-11-blE">
+                                                <rect key="frame" x="80" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laughing" translatesAutoresizingMaskIntoConstraints="NO" id="GF7-lP-hAx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="HzR-ED-WxH"/>
+                                                            <constraint firstAttribute="width" constant="50" id="oaT-6c-yFp"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risueño" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tv-qs-bVq">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ria-uA-I4v">
+                                                <rect key="frame" x="160" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surprised-2" translatesAutoresizingMaskIntoConstraints="NO" id="Pxy-DM-BgU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="DWg-f1-ibm"/>
+                                                            <constraint firstAttribute="height" constant="50" id="svr-Qi-xWz"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorprendido" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-kB-ljQ">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bLf-w4-SbN">
+                                        <rect key="frame" x="50" y="202" width="210" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-Kb-wfp">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cool" translatesAutoresizingMaskIntoConstraints="NO" id="J2L-Sf-9GC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="MLp-6U-Vrh"/>
+                                                            <constraint firstAttribute="width" constant="50" id="jCL-cX-8ae"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cool" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ly-sO-BEu">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RcD-7j-1h7">
+                                                <rect key="frame" x="80" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devil" translatesAutoresizingMaskIntoConstraints="NO" id="gvo-oF-3gb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="ciK-b1-f3W"/>
+                                                            <constraint firstAttribute="height" constant="50" id="mtv-nl-CrI"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Malévolo" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idG-H9-UnT">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-HT-dBI">
+                                                <rect key="frame" x="160" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiss" translatesAutoresizingMaskIntoConstraints="NO" id="5qh-UV-Ego">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="SLF-Wy-Mu2"/>
+                                                            <constraint firstAttribute="height" constant="50" id="XyX-f4-aaa"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amoroso" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAP-Aw-dRD">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="EnA-rf-eu1">
+                                        <rect key="frame" x="50" y="303" width="210" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="off-Xp-XDP">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confused" translatesAutoresizingMaskIntoConstraints="NO" id="ibD-Cn-Ihj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="0aC-ET-lML"/>
+                                                            <constraint firstAttribute="height" constant="50" id="VS1-aP-yNS"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confusión" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OW-kZ-qX4">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t44-C7-dzd">
+                                                <rect key="frame" x="80" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sick" translatesAutoresizingMaskIntoConstraints="NO" id="U0V-JU-Zrw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="7QI-DV-Q6m"/>
+                                                            <constraint firstAttribute="width" constant="50" id="tQO-iY-Fhh"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enfermo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLN-my-T2j">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qI9-yU-bkF">
+                                                <rect key="frame" x="160" y="0.0" width="50" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muted" translatesAutoresizingMaskIntoConstraints="NO" id="aJ9-Ha-pP9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="a7s-kW-AEK"/>
+                                                            <constraint firstAttribute="width" constant="50" id="cbt-XS-Ayv"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tímido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBc-bu-IQI">
+                                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="11"/>
+                                                        <color key="textColor" red="0.63356357809999997" green="0.31948050859999999" blue="0.99156588320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2gV-mJ-rMI" firstAttribute="leading" secondItem="bCI-5p-sve" secondAttribute="leading" constant="5" id="8YH-15-wr8"/>
+                            <constraint firstItem="2gV-mJ-rMI" firstAttribute="bottom" secondItem="bCI-5p-sve" secondAttribute="bottom" constant="-5" id="GRX-yi-gYC"/>
+                            <constraint firstItem="2gV-mJ-rMI" firstAttribute="centerY" secondItem="d5r-WX-aw7" secondAttribute="centerY" id="Qoh-Ze-4UB"/>
+                            <constraint firstItem="2gV-mJ-rMI" firstAttribute="trailing" secondItem="bCI-5p-sve" secondAttribute="trailing" constant="-5" id="d3e-yr-GDb"/>
+                            <constraint firstItem="2gV-mJ-rMI" firstAttribute="centerX" secondItem="d5r-WX-aw7" secondAttribute="centerX" id="epH-SC-Uvt"/>
+                            <constraint firstItem="2gV-mJ-rMI" firstAttribute="top" secondItem="bCI-5p-sve" secondAttribute="top" constant="5" id="h8R-qZ-YMy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bCI-5p-sve"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMj-dE-9O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4651.875" y="371.83098591549299"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C2v-it-jAT">
+            <objects>
+                <viewController id="AY8-4t-U4w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Beg-9s-rf4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lgbtiqa" translatesAutoresizingMaskIntoConstraints="NO" id="oPk-Ih-mad">
+                                <rect key="frame" x="-20" y="-10" width="360" height="588"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tjt-oi-PMa">
+                                <rect key="frame" x="20" y="84" width="280" height="415"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USH-gn-kFI">
+                                        <rect key="frame" x="2" y="0.0" width="276" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="luO-Bh-0hs"/>
+                                        </constraints>
+                                        <string key="text">Es un espacio de trabajo informativo, donde se involucran temas actuales y con perspectiva de género.Se desea el crecimiento para todas las personas que experimenten un taller, curso o platica, así mismo promocionar productos que contribuyan a una sexualidad integra y saludable. </string>
+                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Educando_sexualidad_v1_color" translatesAutoresizingMaskIntoConstraints="NO" id="BW0-38-i5c">
+                                        <rect key="frame" x="0.0" y="155" width="280" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="DFj-ej-bE2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5o-tG-j3H">
+                                        <rect key="frame" x="30" y="360" width="220" height="55"/>
+                                        <color key="backgroundColor" red="0.6335635781288147" green="0.31948050856590271" blue="0.99156588315963745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OverlockSC-Regular" family="Overlock SC" pointSize="17"/>
+                                        <state key="normal" title="Sitio Web">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="12O-5O-1aH" kind="show" id="Kc9-58-SeA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="USH-gn-kFI" firstAttribute="leading" secondItem="tjt-oi-PMa" secondAttribute="leading" constant="2" id="CtT-XV-jlu"/>
+                                    <constraint firstItem="o5o-tG-j3H" firstAttribute="top" secondItem="BW0-38-i5c" secondAttribute="bottom" constant="5" id="IdQ-Zn-e2B"/>
+                                    <constraint firstItem="o5o-tG-j3H" firstAttribute="centerX" secondItem="tjt-oi-PMa" secondAttribute="centerX" id="JZu-y6-qPc"/>
+                                    <constraint firstAttribute="bottom" secondItem="o5o-tG-j3H" secondAttribute="bottom" constant="10" id="NVw-5Q-5F3"/>
+                                    <constraint firstAttribute="trailing" secondItem="USH-gn-kFI" secondAttribute="trailing" constant="2" id="daD-uK-Hl8"/>
+                                    <constraint firstAttribute="trailing" secondItem="o5o-tG-j3H" secondAttribute="trailing" constant="30" id="eNC-zz-G2m"/>
+                                    <constraint firstItem="o5o-tG-j3H" firstAttribute="leading" secondItem="tjt-oi-PMa" secondAttribute="leading" constant="30" id="fDk-NS-idj"/>
+                                    <constraint firstItem="USH-gn-kFI" firstAttribute="centerX" secondItem="tjt-oi-PMa" secondAttribute="centerX" id="fOS-ZK-EIE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tjt-oi-PMa" firstAttribute="centerY" secondItem="Beg-9s-rf4" secondAttribute="centerY" id="4bh-oU-niV"/>
+                            <constraint firstItem="tjt-oi-PMa" firstAttribute="leading" secondItem="H5G-QY-2Lc" secondAttribute="leading" constant="20" id="Cve-PL-61N"/>
+                            <constraint firstItem="H5G-QY-2Lc" firstAttribute="trailing" secondItem="tjt-oi-PMa" secondAttribute="trailing" constant="20" id="Ntc-Lo-GbB"/>
+                            <constraint firstItem="tjt-oi-PMa" firstAttribute="centerX" secondItem="Beg-9s-rf4" secondAttribute="centerX" id="Ou8-Ip-wES"/>
+                            <constraint firstItem="H5G-QY-2Lc" firstAttribute="bottom" secondItem="tjt-oi-PMa" secondAttribute="bottom" constant="20" id="fTC-Ob-A6D"/>
+                            <constraint firstItem="tjt-oi-PMa" firstAttribute="top" secondItem="H5G-QY-2Lc" secondAttribute="top" constant="20" id="qub-QU-yiM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H5G-QY-2Lc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kX0-az-u5M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53z-m6-pUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3341.25" y="-296.83098591549299"/>
+        </scene>
+        <!--Ajustes-->
+        <scene sceneID="Iym-dj-m26">
+            <objects>
+                <tableViewController id="HOB-3i-KSq" customClass="EventsTableViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3nR-Lg-A7g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="hJ0-P4-hIO">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hJ0-P4-hIO" id="EcB-4Z-4si">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HOB-3i-KSq" id="gwe-o4-X2O"/>
+                            <outlet property="delegate" destination="HOB-3i-KSq" id="ihO-Qs-Fhj"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="settings" id="jxR-V4-MJj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueQ-8E-Key" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461" y="813"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WU0-9Q-1YC">
+            <objects>
+                <tabBarController storyboardIdentifier="WelcomeTab" id="Cnm-Kb-jXe" sceneMemberID="viewController">
+                    <tabBar key="tabBar" alpha="0.84999999999999998" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="pZb-27-5Eh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.73606276512145996" green="0.76162189245223999" blue="0.93456763029098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.58352273700000001" green="0.21590948099999999" blue="0.99956172700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MSt-u3-qm5" kind="relationship" relationship="viewControllers" id="vaZ-Vo-wNS"/>
+                        <segue destination="Fjb-0g-bml" kind="relationship" relationship="viewControllers" id="YwD-PR-GI6"/>
+                        <segue destination="HOB-3i-KSq" kind="relationship" relationship="viewControllers" id="A5y-Cz-Al5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xb-fC-fGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="20"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="IYk-rs-xEz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MSt-u3-qm5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inicio" image="home" id="TPv-qh-TPv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BIm-dC-lcj">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AY8-4t-U4w" kind="relationship" relationship="rootViewController" id="rHs-qA-JPl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI2-0L-Dff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343.75" y="-296.83098591549299"/>
+        </scene>
+        <!--Diario-->
+        <scene sceneID="24Z-kZ-o7W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fjb-0g-bml" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Diario" image="theater-masks" id="RjO-on-8Ft"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Akc-FL-4Ja">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ejg-YA-2Lq" kind="relationship" relationship="rootViewController" id="iZf-Ot-LGz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDZ-QF-zp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="370.77464788732397"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Educando_sexualidad_v1_color" width="1201" height="1201"/>
+        <image name="calm" width="512" height="512"/>
+        <image name="confused" width="512" height="512"/>
+        <image name="cool" width="512" height="512"/>
+        <image name="crying" width="512" height="512"/>
+        <image name="devil" width="512" height="512"/>
+        <image name="happy-11" width="512" height="512"/>
+        <image name="home" width="25" height="25"/>
+        <image name="kiss" width="512" height="512"/>
+        <image name="laughing" width="512" height="512"/>
+        <image name="lgbtiqa" width="619" height="1100"/>
+        <image name="muted" width="512" height="512"/>
+        <image name="sad" width="512" height="512"/>
+        <image name="settings" width="25" height="25"/>
+        <image name="sick" width="512" height="512"/>
+        <image name="surprised-2" width="512" height="512"/>
+        <image name="theater-masks" width="25" height="25"/>
+    </resources>
+</document>
