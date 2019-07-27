@@ -14,6 +14,7 @@
 		5051F30122EBB1C900EA9DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5051F2FF22EBB1C900EA9DE2 /* LaunchScreen.storyboard */; };
 		5051F31A22EBB43000EA9DE2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5051F31922EBB43000EA9DE2 /* Reachability.m */; };
 		5051F31E22EBB92300EA9DE2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5051F31D22EBB92300EA9DE2 /* SystemConfiguration.framework */; };
+		5051F32022EBCBC600EA9DE2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5051F31F22EBCBC600EA9DE2 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5051F31922EBB43000EA9DE2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5051F31B22EBB47900EA9DE2 /* NetStatus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetStatus-Bridging-Header.h"; sourceTree = "<group>"; };
 		5051F31D22EBB92300EA9DE2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5051F31F22EBCBC600EA9DE2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5051F32022EBCBC600EA9DE2 /* WebKit.framework in Frameworks */,
 				5051F31E22EBB92300EA9DE2 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +81,7 @@
 		5051F31C22EBB92300EA9DE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5051F31F22EBCBC600EA9DE2 /* WebKit.framework */,
 				5051F31D22EBB92300EA9DE2 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
