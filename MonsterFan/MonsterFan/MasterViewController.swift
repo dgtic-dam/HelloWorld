@@ -58,8 +58,8 @@ class MasterViewController: UITableViewController, WKNavigationDelegate {
                         //hacer algo con el arreglo de bytes
                         /*let unString = String(bytes:bytes, encoding: .utf8) //Conversión a String
                          print (unString)*/
-                        items = try JSONSerialization.jsonObject(with: bytes, options:.allowFragments) as! [[String : Any]]
-                        print (items)
+                        objects = try JSONSerialization.jsonObject(with: bytes, options:.allowFragments) as! [[String : Any]]
+                        print (objects)
                     }
                     catch {
                         print ("error al abrir el JSON " + error.localizedDescription)
