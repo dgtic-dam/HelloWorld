@@ -85,7 +85,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
  */
        // let URLStr = "https://image.shutterstock.com/image-photo/new-york-april-4-2018-600w-1114115513.jpg"
-        let URLStr = "https://images.unsplash.com/photo-1564166906836-377d60a31fe1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+/*        let URLStr = "https://images.unsplash.com/photo-1564166906836-377d60a31fe1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
         if let url = URL(string: URLStr){
             do {
                 let bytes = try Data(contentsOf: url) // la clase Data representa un arreglo de bytes
@@ -101,8 +101,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         //Se comenta el WebView para mostrar el image View
         }
     }// quitar al descomentar WebView
-        
-    /*
+ */
+   
         let htmlString = "<span style=\"font-family:'Avenir'; font-size:16px;\"><p>Instantly turn your words into images.</p><p>Myimage aims to change the way we communicate.</p><p><span style=\"color:35a9f3;\">Think it, See it, Share it.</span> Have a story, thought, or idea? Tell it through a Wimage. Using text or voice, your words are transformed into icons, right in front of your eyes.</p><p><span style=\"color:35a9f3;\">Be creative.</span></p></span><a href='http://www.unam.mx'>CLIC AQUÍ</a>"
         wv.loadHTMLString(htmlString, baseURL: nil)
         wv.navigationDelegate = self
@@ -115,8 +115,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
             let elReq = navigationAction.request
             if let path = elReq.url?.path{
                 //aqui se puede comprobar que href es el que se cliqueó
-                // identificar que contenido es el que se tiene que mostrar....
-                UIApplication.shared.open(URL(string: "http://www.educandoensexualidad.com.mx")!, options:[:], completionHandler: nil)
+                // identificar que contenido es el que se tiene que mostrar....EN EL BROWSER
+                if UIApplication.shared.canOpenURL(URL(string: "http://www.educandoensexualidad.com.mx")!){ //Varifica si existe alguna aplicación en el dispositivo que pueda manejar el protocolo especificado en la URL //URL Schemes
+                    print ("Si hay aplicación y puedo abrirlo")
+                    UIApplication.shared.open(URL(string: "http://www.educandoensexualidad.com.mx")!, options:[:], completionHandler: nil)
+                }
+                else{
+                    //some code
+                }
                 //para que no haga la navegación en el objeto webkview
                 decisionHandler(WKNavigationActionPolicy.cancel)
             }
@@ -126,7 +132,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             decisionHandler(WKNavigationActionPolicy.allow)
         }
     }
-*/
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
