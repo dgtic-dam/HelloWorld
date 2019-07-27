@@ -49,8 +49,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         ipc.sourceType = type
         ipc.allowsEditing = true
         ipc.delegate = self
-        self.present(ipc, animated: true, completion: nil)
+        //Si es IPAD, mostrar el imagepicker en popover
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            self.present(ipc, animated: true, completion: nil)
+        }
+        else {
+            ipc.modalPresentationStyle = .popover
+            let popover = ipc.popoverPresentationController
+            popover?.sourceView = self.view
+            self.present(ipc, animated: true, completion: nil)
+        }
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        var orientacion = "portrait"
+        if UIDevice.current.orientation.isLandscape{
+            orientacion = "landscape"
+            print ("landscape rotation")
+        }
+        else{
+            orientacion = "portrait"
+            print ("portrait rotation")
+        }
+        
+    }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let laImagen = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
@@ -61,6 +84,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }
         ipc.dismiss(animated: true, completion: nil)
-    } //Cuando se selecciona una imagen
+    } //Cuando se selecciona una imagen //Redimensionar
+    
 }
 

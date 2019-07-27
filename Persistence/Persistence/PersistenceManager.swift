@@ -30,14 +30,15 @@ class PersistenceManager: NSObject {
     }
     
     private func cargaArchivos() {
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String //Le pregunta al SO el directorio, el usuario y si será búsqueda recursiva. Regresa un arregloy lo convierto a String para obtener el path
+        print (documentDirectory) //Imprimir directorio
         let rutaArchivos = documentDirectory
-        rutaPlist = rutaArchivos + "/persistence.plist"
+        rutaPlist = "file://" + rutaArchivos + "/persistence.plist"
         if fileManager.fileExists(atPath: rutaPlist) {
             if let url = URL(string:rutaPlist) {
                 do {
                     let data = try Data(contentsOf:url)
-                    let tmp = try PropertyListSerialization.propertyList(from:data, options: .mutableContainers, format:nil)
+                    let tmp = try PropertyListSerialization.propertyList(from:data, options: .mutableContainers, format:nil)  //Permite convertir bytes a un objeto serializado, diccionario de String:String
                     dictPlist = tmp as! [String:String]
                 }
                 catch {
@@ -45,7 +46,7 @@ class PersistenceManager: NSObject {
                 }
             }
         }
-        rutaJson = rutaArchivos + "/persistence.json"
+        rutaJson = "file://" + rutaArchivos + "/persistence.json"
         if fileManager.fileExists(atPath: rutaJson) {
             if let url = URL(string:rutaJson) {
                 do {
@@ -54,7 +55,6 @@ class PersistenceManager: NSObject {
                     dictJSON = tmp as! [String:String]
                 }
                 catch {
-                    
                 }
             }
         }
@@ -71,7 +71,6 @@ class PersistenceManager: NSObject {
             case .jsonFile:result = guardaEnJson(key:enKey, val:val)
             default:result = guardaEnUserDefaults(key:enKey, val:val)
         }
-        
         return result
     }
     
@@ -84,7 +83,6 @@ class PersistenceManager: NSObject {
                 return true
             }
             catch {
-            
             }
         }
         return false
