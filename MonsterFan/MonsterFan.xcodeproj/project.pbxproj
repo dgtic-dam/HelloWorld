@@ -16,6 +16,8 @@
 		501AD7CD22ECAE3D00315CB9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 501AD7CC22ECAE3D00315CB9 /* Reachability.m */; };
 		501AD7D022ECAE8C00315CB9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501AD7CF22ECAE8C00315CB9 /* WebKit.framework */; };
 		501AD7D222ECAEC300315CB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501AD7D122ECAEC300315CB9 /* SystemConfiguration.framework */; };
+		65C4AF2522EF816000898E04 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4AF2422EF816000898E04 /* DataSource.swift */; };
+		65C4AF2922EF996100898E04 /* empty_250.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C4AF2822EF996000898E04 /* empty_250.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		501AD7CC22ECAE3D00315CB9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		501AD7CF22ECAE8C00315CB9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		501AD7D122ECAEC300315CB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		65C4AF2422EF816000898E04 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		65C4AF2822EF996000898E04 /* empty_250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty_250.png; path = ../../../../../Downloads/empty_250.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +71,11 @@
 		501AD7B522ECAAC200315CB9 /* MonsterFan */ = {
 			isa = PBXGroup;
 			children = (
+				65C4AF2822EF996000898E04 /* empty_250.png */,
 				501AD7CB22ECAE3C00315CB9 /* Reachability.h */,
 				501AD7CC22ECAE3D00315CB9 /* Reachability.m */,
 				501AD7B622ECAAC200315CB9 /* AppDelegate.swift */,
+				65C4AF2422EF816000898E04 /* DataSource.swift */,
 				501AD7B822ECAAC200315CB9 /* MasterViewController.swift */,
 				501AD7BA22ECAAC200315CB9 /* DetailViewController.swift */,
 				501AD7BC22ECAAC200315CB9 /* Main.storyboard */,
@@ -150,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				501AD7C322ECAAC300315CB9 /* LaunchScreen.storyboard in Resources */,
+				65C4AF2922EF996100898E04 /* empty_250.png in Resources */,
 				501AD7C022ECAAC300315CB9 /* Assets.xcassets in Resources */,
 				501AD7BE22ECAAC200315CB9 /* Main.storyboard in Resources */,
 			);
@@ -165,6 +172,7 @@
 				501AD7BB22ECAAC200315CB9 /* DetailViewController.swift in Sources */,
 				501AD7B922ECAAC200315CB9 /* MasterViewController.swift in Sources */,
 				501AD7CD22ECAE3D00315CB9 /* Reachability.m in Sources */,
+				65C4AF2522EF816000898E04 /* DataSource.swift in Sources */,
 				501AD7B722ECAAC200315CB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
