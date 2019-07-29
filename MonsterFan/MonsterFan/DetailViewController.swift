@@ -35,20 +35,17 @@ class DetailViewController: UIViewController {
             if let url = URL(string: URLStr){
                 do {
                     let bytes = try Data(contentsOf: url) // la clase Data representa un arreglo de bytes
-                    let iv = UIImageView(frame: UIScreen.main.bounds)
-                    iv.contentMode = .scaleAspectFit //Para que la imagen no se estire ni se pierda la resolución
-                    self.view.addSubview(iv)
+                   // let iv = UIImageView(frame: UIScreen.main.bounds)
+                  //  iv.contentMode = .scaleAspectFit //Para que la imagen no se estire ni se pierda la resolución
+                  //  self.view.addSubview(iv)
                     //Se crea un objeto UImage a partir  de los bytes obtenidos de la URL
-                    iv.image = UIImage(data: bytes)
-                    //datailImage.image = UIImage(named: bytes)
+                 //   iv.image = UIImage(data: bytes)
+                    datailImage.contentMode = .scaleAspectFit
+                    datailImage.image = UIImage(data: bytes)
                 }
                 catch {
-                  //  let imageEmpty = "empty_250.png"
-                   // datailImage.image = UIImage(named: imageEmpty)
-                    let iv = UIImageView(frame: UIScreen.main.bounds)
-                    iv.contentMode = .scaleAspectFit //Para que la imagen no se estire ni se pierda la resolución
-                    self.view.addSubview(iv)
-                    iv.image = UIImage(named: "empty_250.png")
+                    let imageEmpty = "empty_250.png"
+                    datailImage.image = UIImage(named: imageEmpty)
                     print ("No existe la imagen " + error.localizedDescription)
                 }
                 //Se comenta el WebView para mostrar el image View
