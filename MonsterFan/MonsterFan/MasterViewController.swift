@@ -12,8 +12,8 @@ import WebKit
 class MasterViewController: UITableViewController, WKNavigationDelegate {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
-    
+    //var objects = [Any]()
+    var objects:[[String:Any]] = []
     var ac:UIAlertController?
     var timer:Timer?
     var items:[[String:Any]] = []
@@ -46,7 +46,7 @@ class MasterViewController: UITableViewController, WKNavigationDelegate {
                 ac?.addAction(aaOK)
                 present(ac!, animated: true, completion: nil)
             }
-            else{
+         /*   else{
                 let wv = WKWebView(frame: UIScreen.main.bounds)
                 self.view.addSubview(wv)
                 // Consumir JSON desde web
@@ -65,7 +65,7 @@ class MasterViewController: UITableViewController, WKNavigationDelegate {
                         print ("error al abrir el JSON " + error.localizedDescription)
                     }
                 }
-            }
+            }*/
         }
     }
 
@@ -76,27 +76,27 @@ class MasterViewController: UITableViewController, WKNavigationDelegate {
 
         //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         //navigationItem.rightBarButtonItem = addButton
-        if let split = splitViewController {
+  /*      if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        }
+        }*/
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
+        items = DataSource.getJsonArray()
     }
 
-    @objc
+    /*@objc
     func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
+        objects.insert(<#T##newElement: [String : Any]##[String : Any]#>, at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
-
+*/
     // MARK: - Segues
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let object = objects[indexPath.row] as! NSDate
@@ -106,7 +106,8 @@ class MasterViewController: UITableViewController, WKNavigationDelegate {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
-    }
+    }*/
+
 
     // MARK: - Table View
 
@@ -115,30 +116,59 @@ class MasterViewController: UITableViewController, WKNavigationDelegate {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return items.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  /*  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let object = objects[indexPath.row] as! NSDate
         cell.textLabel!.text = object.description
         return cell
+    }*/
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let item = items[indexPath.row]
+        if let title = item["title"] as? String {
+            cell.textLabel?.text = title
+        }
+        return cell
     }
 
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+  /*  override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
-    }
+    }*/
 
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let destino = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+        //Conocer el  indice de item seleccionada
+        let indexPath = self.tableView.indexPathForSelectedRow
+        //obtener el diccionario del arreglo, en la posición seleccionada
+        let myData = items[indexPath!.row]
+        //asignamos el diccionario, a la property del controller destino
+        destino.info = myData
+    }
+    
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.datailImage
+            }
+        }*/
+
+    
+    /*override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             objects.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
-    }
-
+    }*/
 
 }
