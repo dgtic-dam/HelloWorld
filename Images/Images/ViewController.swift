@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -34,12 +35,49 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.view.addSubview(iv)
     }
     
-    @objc func botonTouch(){ //se hace compatible con objective c con @objc
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            //Si hay cámara...preguntar al usuario de donde elegir la imagen
-            //UIImagePickerController es el control del selector de imágenes, entre cámara y galería
+    @objc func botonTouch() {
+        // comprobar si el dispositivo está habilitado con una cámara
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            // Si hay cámara....
+            // comprobar si el permiso de uso está
+            let permStatus = AVCaptureDevice.authorizationStatus(for:AVMediaType.video)
+            if permStatus == .notDetermined {
+                AVCaptureDevice.requestAccess(for: AVMediaType.video) { (status) in
+                    if status { // El usuario autorizó el uso de la cámara
+                        self.launchImagePicker(UIImagePickerController.SourceType.camera)
+                    }
+                    else {
+                        self.launchImagePicker(UIImagePickerController.SourceType.photoLibrary)
+                    }
+                }
+            }
+            else if permStatus == .denied {
+                let ac = UIAlertController(title: "Error", message: "Para tomar fotos, debe autorizar el uso de la cámara desde Configuración, quiere autorizarlo ahora?", preferredStyle: .alert)
+                let a1 = UIAlertAction(title: "SI", style: .default) { (alert) in
+                    UIApplication.shared.open(URL(string:UIApplication.openSettingsURLString)!, options: [:], completionHandler:nil)
+                }
+                ac.addAction(a1)
+                let a2 = UIAlertAction(title: "No, usar Galería", style: .default) { (alert) in
+                    self.launchImagePicker(UIImagePickerController.SourceType.photoLibrary)
+                }
+                ac.addAction(a2)
+                present(ac, animated: true, completion: nil)
+            }
+            else {
+                // si hay hardware y si hay permiso, preguntar al usuario de donde elegir la imagen
+                let ac = UIAlertController(title: "Elegir foto", message: "quiere usar...", preferredStyle: .alert)
+                let a1 = UIAlertAction(title: "Cámara", style: .default) { (alert) in
+                    self.launchImagePicker(UIImagePickerController.SourceType.camera)
+                }
+                ac.addAction(a1)
+                let a2 = UIAlertAction(title: "Galería", style: .default) { (alert) in
+                    self.launchImagePicker(UIImagePickerController.SourceType.photoLibrary)
+                }
+                ac.addAction(a2)
+                present(ac, animated: true, completion: nil)
+            }
         }
-        else{
+        else {
             launchImagePicker(UIImagePickerController.SourceType.photoLibrary)
         }
     }
@@ -79,12 +117,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let laImagen = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             //Si NO se permite la edición, la imagen se va a encontrar en esta llave del Dictionary: info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 iv.image = laImagen
+            if ipc.sourceType == .camera {
+                //Salvar la imagen a photoGallery
+                //UIImageWriteToSavedPhotosAlbum(laImagen,nil, nil, nil)
+                //Salvar en álbum Custom Photo Album
+                CustomPhotoAlbum.shared.save(image: laImagen)
+            }
         } //Se busca la propiedad en el diccionario
         else{
             
         }
         ipc.dismiss(animated: true, completion: nil)
     } //Cuando se selecciona una imagen //Redimensionar
+    
+    //Si cancela se cierra el picker
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        ipc.dismiss(animated: true, completion: nil)
+    }
     
 }
 
