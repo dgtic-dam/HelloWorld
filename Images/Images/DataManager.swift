@@ -22,6 +22,7 @@ class DataManager:NSObject{
     
     // property de tipo lazy var: Retardar la inicialización, solo cuando sea necesario
     lazy var persistentContainer:NSPersistentContainer = {
+        // Se neesita el nombredel archivo .xcdatamodel
         let container = NSPersistentContainer(name: "Images") // name: "nombre del modelo", mismo nombre del sqlite que se va a generar
         container.loadPersistentStores(completionHandler: {
             (storeDescription, error) in
@@ -50,12 +51,33 @@ class DataManager:NSObject{
             //guardo en la BD
             let imagen = NSEntityDescription.insertNewObject(forEntityName: "Imagen", into: self.persistentContainer.viewContext) as! Imagen //Objeto ManagedObject
             imagen.titulo = titulo
-            imagen.path = urlFoto!.path
+            //imagen.path = urlFoto!.path
+            imagen.path = nombreFoto
             imagen.guid = UUID().uuidString
+            //Guardar latitud y longitud de donde se tomó la foto
+            if GeoManager.shared.lastKnowLocation != nil {
+                imagen.lat = GeoManager.shared.lastKnowLocation!.latitude
+                imagen.lon = GeoManager.shared.lastKnowLocation!.longitude
+            }
             try self.persistentContainer.viewContext.save()
         }
         catch{
             print("Ocurrió un error al guardar: \(error.localizedDescription)")
         }
     }
+    
+    func selectImages() -> [Imagen]{
+        var result:[Imagen] = []
+        let query = NSFetchRequest<Imagen>(entityName: "Imagen")
+        do{
+            result = try self.persistentContainer.viewContext.fetch(query)
+            print("Registros: \(result.count)")
+        
+        }
+        catch{
+            
+        }
+        return result
+    }
+    
 }

@@ -2,7 +2,7 @@
 //  Imagen+CoreDataClass.swift
 //  Images
 //
-//  Created by Infraestructura on 8/2/19.
+//  Created by Infraestructura on 8/3/19.
 //  Copyright © 2019 Daniel Rosales. All rights reserved.
 //
 //

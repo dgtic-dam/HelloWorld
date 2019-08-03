@@ -63,7 +63,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 ac.addAction(a2)
                 present(ac, animated: true, completion: nil)
             }
-            else {
+            else {  //.authorized
                 // si hay hardware y si hay permiso, preguntar al usuario de donde elegir la imagen
                 let ac = UIAlertController(title: "Elegir foto", message: "quiere usar...", preferredStyle: .alert)
                 let a1 = UIAlertAction(title: "Cámara", style: .default) { (alert) in
@@ -117,16 +117,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let laImagen = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             //Si NO se permite la edición, la imagen se va a encontrar en esta llave del Dictionary: info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 iv.image = laImagen
-            let ac = UIAlertController(title: "Elegir foto", message: "Define un título", preferredStyle: .alert)
-            ac.addTextField(configurationHandler: { (textField) in textField.placeholder = "prueba"
+            let ac3 = UIAlertController(title: "Elegir foto", message: "Define un título", preferredStyle: .alert)
+            ac3.addTextField(configurationHandler: { (textField) in textField.placeholder = "prueba"
             })
             let a3 = UIAlertAction(title: "OK", style: .default) { (alert) in
-                let txtTitulo = ac.textFields?.first
+                let txtTitulo = ac3.textFields?.first
                 DataManager.shared.saveImage(laImagen, titulo: txtTitulo?.text ?? "prueba")
+                
+                // Mostrar el número de fotos guardadas
+                let numFotos = DataManager.shared.selectImages().count
+                print("numFotos:\(numFotos)")
+                let ac4 = UIAlertController(title: "Fotos guardadas", message: "Ahora hay \(numFotos) fotos guardadas", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+                ac4.addAction(ok)
+                self.present(ac4, animated: true, completion: nil)
             }
-            ac.addAction(a3)
+            ac3.addAction(a3)
             ipc.dismiss(animated: true) {
-                self.present(ac, animated: true, completion: nil)
+                self.present(ac3, animated: true, completion: nil)
             }
           /*  if ipc.sourceType == .camera {
                 //Resources(Bundle) //Tiempo de ejecución R
