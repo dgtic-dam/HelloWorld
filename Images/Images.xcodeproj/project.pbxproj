@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5018D6B422F4F94300057AB0 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5018D6B322F4F94300057AB0 /* CustomPhotoAlbum.swift */; };
 		5018D6B722F4F99900057AB0 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5018D6B622F4F99900057AB0 /* Photos.framework */; };
+		5018D6B922F5075300057AB0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5018D6B822F5075300057AB0 /* DataManager.swift */; };
+		5018D6BB22F50F2300057AB0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5018D6BA22F50F2300057AB0 /* CoreData.framework */; };
+		5018D6BE22F5122D00057AB0 /* Images.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5018D6BC22F5122D00057AB0 /* Images.xcdatamodeld */; };
+		5018D6C122F5164700057AB0 /* Imagen+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5018D6BF22F5164700057AB0 /* Imagen+CoreDataClass.swift */; };
+		5018D6C222F5164700057AB0 /* Imagen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5018D6C022F5164700057AB0 /* Imagen+CoreDataProperties.swift */; };
 		501AD79922EC984F00315CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD79822EC984F00315CB9 /* AppDelegate.swift */; };
 		501AD79B22EC984F00315CB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD79A22EC984F00315CB9 /* ViewController.swift */; };
 		501AD79E22EC984F00315CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501AD79C22EC984F00315CB9 /* Main.storyboard */; };
@@ -19,6 +24,11 @@
 /* Begin PBXFileReference section */
 		5018D6B322F4F94300057AB0 /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoAlbum.swift; sourceTree = "<group>"; };
 		5018D6B622F4F99900057AB0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		5018D6B822F5075300057AB0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		5018D6BA22F50F2300057AB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5018D6BD22F5122D00057AB0 /* Images.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Images.xcdatamodel; sourceTree = "<group>"; };
+		5018D6BF22F5164700057AB0 /* Imagen+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Imagen+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5018D6C022F5164700057AB0 /* Imagen+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Imagen+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		501AD79522EC984F00315CB9 /* Images.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Images.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501AD79822EC984F00315CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		501AD79A22EC984F00315CB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5018D6BB22F50F2300057AB0 /* CoreData.framework in Frameworks */,
 				5018D6B722F4F99900057AB0 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +54,7 @@
 		5018D6B522F4F99800057AB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5018D6BA22F50F2300057AB0 /* CoreData.framework */,
 				5018D6B622F4F99900057AB0 /* Photos.framework */,
 			);
 			name = Frameworks;
@@ -51,6 +63,8 @@
 		501AD78C22EC984F00315CB9 = {
 			isa = PBXGroup;
 			children = (
+				5018D6BF22F5164700057AB0 /* Imagen+CoreDataClass.swift */,
+				5018D6C022F5164700057AB0 /* Imagen+CoreDataProperties.swift */,
 				501AD79722EC984F00315CB9 /* Images */,
 				501AD79622EC984F00315CB9 /* Products */,
 				5018D6B522F4F99800057AB0 /* Frameworks */,
@@ -75,6 +89,8 @@
 				501AD79F22EC985200315CB9 /* Assets.xcassets */,
 				501AD7A122EC985200315CB9 /* LaunchScreen.storyboard */,
 				501AD7A422EC985200315CB9 /* Info.plist */,
+				5018D6B822F5075300057AB0 /* DataManager.swift */,
+				5018D6BC22F5122D00057AB0 /* Images.xcdatamodeld */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -151,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5018D6B422F4F94300057AB0 /* CustomPhotoAlbum.swift in Sources */,
+				5018D6B922F5075300057AB0 /* DataManager.swift in Sources */,
+				5018D6BE22F5122D00057AB0 /* Images.xcdatamodeld in Sources */,
 				501AD79B22EC984F00315CB9 /* ViewController.swift in Sources */,
+				5018D6C122F5164700057AB0 /* Imagen+CoreDataClass.swift in Sources */,
 				501AD79922EC984F00315CB9 /* AppDelegate.swift in Sources */,
+				5018D6C222F5164700057AB0 /* Imagen+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +372,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5018D6BC22F5122D00057AB0 /* Images.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5018D6BD22F5122D00057AB0 /* Images.xcdatamodel */,
+			);
+			currentVersion = 5018D6BD22F5122D00057AB0 /* Images.xcdatamodel */;
+			path = Images.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 501AD78D22EC984F00315CB9 /* Project object */;
 }

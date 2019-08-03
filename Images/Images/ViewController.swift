@@ -117,17 +117,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let laImagen = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             //Si NO se permite la edición, la imagen se va a encontrar en esta llave del Dictionary: info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 iv.image = laImagen
-            if ipc.sourceType == .camera {
-                //Salvar la imagen a photoGallery
-                //UIImageWriteToSavedPhotosAlbum(laImagen,nil, nil, nil)
-                //Salvar en álbum Custom Photo Album
-                CustomPhotoAlbum.shared.save(image: laImagen)
+            let ac = UIAlertController(title: "Elegir foto", message: "Define un título", preferredStyle: .alert)
+            ac.addTextField(configurationHandler: { (textField) in textField.placeholder = "prueba"
+            })
+            let a3 = UIAlertAction(title: "OK", style: .default) { (alert) in
+                let txtTitulo = ac.textFields?.first
+                DataManager.shared.saveImage(laImagen, titulo: txtTitulo?.text ?? "prueba")
             }
+            ac.addAction(a3)
+            ipc.dismiss(animated: true) {
+                self.present(ac, animated: true, completion: nil)
+            }
+          /*  if ipc.sourceType == .camera {
+                //Resources(Bundle) //Tiempo de ejecución R
+                //Salvar la imagen a photoGallery //Documents R/W
+                //UIImageWriteToSavedPhotosAlbum(laImagen,nil, nil, nil)
+                
+                //Salvar en álbum Custom Photo Album //Documents R/W
+                //CustomPhotoAlbum.shared.save(image: laImagen)
+                
+                //guardar a Library
+            }*/
         } //Se busca la propiedad en el diccionario
         else{
-            
+            ipc.dismiss(animated: true, completion: nil)
         }
-        ipc.dismiss(animated: true, completion: nil)
     } //Cuando se selecciona una imagen //Redimensionar
     
     //Si cancela se cierra el picker
