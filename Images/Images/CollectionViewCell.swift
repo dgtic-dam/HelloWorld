@@ -22,29 +22,22 @@ class CollectionViewCell: UICollectionViewCell {
     func configurarCelda(_ info:Imagen){
 
         if let imgNom = info.path as? String{
-            let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)
-           // let urlFoto = libraryURL.appendingPathComponent(imgNom)
-            print ("Imprime url de imagen: \(imgNom)")
-            let URLStr = "File:" + imgNom
-            print("Imprime imagen: \(URLStr)")
-            Image.image = UIImage(named: URLStr)
-            /*if let url = U=RL(string: URLStr){
-                do {
-                    let bytes = try Data(contentsOf: url) // la clase Data representa un arreglo de bytes
-                    // let iv = UIImageView(frame: UIScreen.main.bounds)
-                    //  iv.contentMode = .scaleAspectFit //Para que la imagen no se estire ni se pierda la resolución
-                    //  self.view.addSubview(iv)
-                    //Se crea un objeto UImage a partir  de los bytes obtenidos de la URL
-                    //   iv.image = UIImage(data: bytes)
-                    datailImage.contentMode = .scaleAspectFit
-                    datailImage.image = UIImage(data: bytes)
+            let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first
+            if let urlFoto = libraryURL?.appendingPathComponent(imgNom){
+                if let bytes = try? Data(contentsOf: urlFoto) {
+                    Image.image = UIImage(data: bytes)
                 }
-                catch {
-                    let imageEmpty = "empty_250.png"
-                    datailImage.image = UIImage(named: imageEmpty)
-                    print ("No existe la imagen " + error.localizedDescription)
-                }*/
+            }
         }
+            
+            
+    
+           // let URLStr = "File:" + imgNom
+            //print("Imprime imagen: \(URLStr)")
+           // let url = URL(string: stringFoto!)
+            //// la clase Data representa un arreglo de bytes
+            
+    
         if let txtNom = info.titulo as? String {
             txtLabel.text = txtNom
            print ("Imprime label de Celda: \(txtNom)")

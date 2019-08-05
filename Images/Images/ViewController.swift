@@ -89,13 +89,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         ipc.delegate = self
         //Si es IPAD, mostrar el imagepicker en popover
         if UIDevice.current.userInterfaceIdiom == .phone {
-            self.present(ipc, animated: true, completion: nil)
-        }
-        else {
             ipc.modalPresentationStyle = .popover
             let popover = ipc.popoverPresentationController
             popover?.sourceView = self.view
             self.present(ipc, animated: true, completion: nil)
+           
+        }
+        else {
+             self.present(ipc, animated: true, completion: nil)
         }
     }
     

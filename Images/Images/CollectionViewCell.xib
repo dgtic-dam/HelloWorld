@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbu-cL-kcA">
-                        <rect key="frame" x="10" y="126" width="50" height="18"/>
+                        <rect key="frame" x="10" y="123" width="50" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
@@ -32,7 +32,7 @@
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.38760166950000002" green="1" blue="0.5860980308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.15977475054643808" green="1" blue="0.83978243435592925" alpha="0.31418557363013699" colorSpace="custom" customColorSpace="sRGB"/>
             <edgeInsets key="layoutMargins" top="2" left="2" bottom="2" right="2"/>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="248" height="196"/>
