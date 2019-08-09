@@ -13,6 +13,12 @@ private let reuseIdentifier = "Cell"
 class ImgGallery: UICollectionViewController {
     var items:[Imagen] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        items = DataManager.shared.selectImages()
+        self.collectionView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         items = DataManager.shared.selectImages()

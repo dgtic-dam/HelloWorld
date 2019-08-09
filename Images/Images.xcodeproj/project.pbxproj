@@ -25,6 +25,9 @@
 		501AEAE922F5FA3A00B06EBA /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AEAE822F5FA3A00B06EBA /* GeoManager.swift */; };
 		501AEAF322F60E3B00B06EBA /* Imagen+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AEAF122F60E3B00B06EBA /* Imagen+CoreDataClass.swift */; };
 		501AEAF422F60E3B00B06EBA /* Imagen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AEAF222F60E3B00B06EBA /* Imagen+CoreDataProperties.swift */; };
+		507359F422FE1F6A001614F6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507359F322FE1F6A001614F6 /* MapKit.framework */; };
+		507359F822FE21AE001614F6 /* ImgDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507359F722FE21AE001614F6 /* ImgDetail.swift */; };
+		507359FA22FE3221001614F6 /* MyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507359F922FE3221001614F6 /* MyPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		501AEAF022F60B9700B06EBA /* Images with Location.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Images with Location.xcdatamodel"; sourceTree = "<group>"; };
 		501AEAF122F60E3B00B06EBA /* Imagen+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Imagen+CoreDataClass.swift"; sourceTree = "<group>"; };
 		501AEAF222F60E3B00B06EBA /* Imagen+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Imagen+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		507359F322FE1F6A001614F6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		507359F722FE21AE001614F6 /* ImgDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgDetail.swift; sourceTree = "<group>"; };
+		507359F922FE3221001614F6 /* MyPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507359F422FE1F6A001614F6 /* MapKit.framework in Frameworks */,
 				501AEAE722F5F94700B06EBA /* CoreLocation.framework in Frameworks */,
 				501AEAE522F5EE0300B06EBA /* Foundation.framework in Frameworks */,
 				5018D6BB22F50F2300057AB0 /* CoreData.framework in Frameworks */,
@@ -69,6 +76,7 @@
 		5018D6B522F4F99800057AB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				507359F322FE1F6A001614F6 /* MapKit.framework */,
 				501AEAE622F5F94600B06EBA /* CoreLocation.framework */,
 				501AEAE422F5EE0200B06EBA /* Foundation.framework */,
 				5018D6BA22F50F2300057AB0 /* CoreData.framework */,
@@ -112,6 +120,8 @@
 				501AEAE022F5E4FE00B06EBA /* CollectionViewCell.swift */,
 				501AEAE122F5E4FE00B06EBA /* CollectionViewCell.xib */,
 				501AEAE822F5FA3A00B06EBA /* GeoManager.swift */,
+				507359F722FE21AE001614F6 /* ImgDetail.swift */,
+				507359F922FE3221001614F6 /* MyPin.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -198,11 +208,13 @@
 				501AEAE222F5E4FE00B06EBA /* CollectionViewCell.swift in Sources */,
 				5018D6B922F5075300057AB0 /* DataManager.swift in Sources */,
 				501AEAF422F60E3B00B06EBA /* Imagen+CoreDataProperties.swift in Sources */,
+				507359F822FE21AE001614F6 /* ImgDetail.swift in Sources */,
 				501AEAF322F60E3B00B06EBA /* Imagen+CoreDataClass.swift in Sources */,
 				5018D6BE22F5122D00057AB0 /* Images.xcdatamodeld in Sources */,
 				501AD79B22EC984F00315CB9 /* ViewController.swift in Sources */,
 				501AD79922EC984F00315CB9 /* AppDelegate.swift in Sources */,
 				501AEAE922F5FA3A00B06EBA /* GeoManager.swift in Sources */,
+				507359FA22FE3221001614F6 /* MyPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

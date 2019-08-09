@@ -75,7 +75,7 @@ class DataManager:NSObject{
         
         }
         catch{
-            
+            print(error.localizedDescription)
         }
         return result
     }
