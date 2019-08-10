@@ -58,7 +58,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? { //Método delegado del mapa
+        let tmpPin = annotation as! MyPin
+        print (tmpPin.category)
        var batiPin = mapView.dequeueReusableAnnotationView(withIdentifier: "batiPin") //Se reutiliza el pin
         if batiPin == nil{
             batiPin = MKAnnotationView(annotation: annotation, reuseIdentifier: "batiPin")
