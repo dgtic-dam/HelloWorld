@@ -3,3 +3,5 @@
 * [Convertir Excel a JSON](https://codebeautify.org/excel-to-json)
 * Become a Xcoder
 * [Documentación CoreData](https://developer.apple.com/documentation/coredata/nspersistentcontainer)
+* [BCRYPT](https://github.com/aberkunov/PerfectBCrypt)
+* [Cocoapods](https://cocoapods.org/)
