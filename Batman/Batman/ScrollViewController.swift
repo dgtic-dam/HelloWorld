@@ -113,8 +113,10 @@ class ScrollViewController: UIViewController {
         self.txtPhone!.backgroundColor = txtBackColor
         self.txtPhone!.textColor = txtForeColor
         self.scrollView!.addSubview(self.txtPhone!)
-        self.scrollView!.contentSize = (scrollView?.frame.size)!
-        let tap = UITapGestureRecognizer(target: self, action:#selector(tapped))
+        // esto cancela la función de scroll
+       // self.scrollView!.contentSize = (scrollView?.frame.size)!
+        self.scrollView!.contentSize = CGSize(width: (scrollView?.frame.width)!, height: self.txtPhone.frame.maxY)
+        let tap = UITapGestureRecognizer(target: self, action:#selector(tapped)) //
         self.scrollView!.addGestureRecognizer(tap)
     }
     
@@ -123,11 +125,14 @@ class ScrollViewController: UIViewController {
     }
     
     func resignFields() {
+        self.view.endEditing(true)
+        /*
         self.txtApp?.resignFirstResponder()
         self.txtNom?.resignFirstResponder()
         self.txtMail?.resignFirstResponder()
         self.txtMail2?.resignFirstResponder()
         self.txtPhone?.resignFirstResponder()
+        */
     }
     
     @objc func tecladoAparece(_ notification:Notification){
@@ -143,7 +148,7 @@ class ScrollViewController: UIViewController {
     
     func adjustUI(_ notification:Notification, up:Bool) {
         let info:Dictionary = notification.userInfo!
-        let value = info [UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
+        let value = info [UIResponder.keyboardFrameEndUserInfoKey] as! NSValue //Pregunta cuando mide el teclado cuando se terminó de mover
         let frameTeclado = value.cgRectValue
         var contentSize = self.scrollView!.contentSize
         if up {
