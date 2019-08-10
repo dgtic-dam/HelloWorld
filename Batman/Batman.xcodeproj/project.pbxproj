@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501A9F2122FF1E0E00E2707C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A9F2022FF1E0E00E2707C /* CoreLocation.framework */; };
+		501A9F2322FF1FC000E2707C /* MyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A9F2222FF1FC000E2707C /* MyPin.swift */; };
 		50735A0822FE4695001614F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50735A0722FE4695001614F6 /* AppDelegate.swift */; };
 		50735A0A22FE4695001614F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50735A0922FE4695001614F6 /* ViewController.swift */; };
 		50735A0D22FE4695001614F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50735A0B22FE4695001614F6 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		361C5BDDC4BAA483D1E54F7D /* Pods-Batman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Batman.release.xcconfig"; path = "Pods/Target Support Files/Pods-Batman/Pods-Batman.release.xcconfig"; sourceTree = "<group>"; };
+		501A9F2022FF1E0E00E2707C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		501A9F2222FF1FC000E2707C /* MyPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPin.swift; sourceTree = "<group>"; };
 		50735A0422FE4695001614F6 /* Batman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Batman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50735A0722FE4695001614F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50735A0922FE4695001614F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501A9F2122FF1E0E00E2707C /* CoreLocation.framework in Frameworks */,
 				ACFC06E4743F724C744398EC /* Pods_Batman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +52,7 @@
 		12BECA575982B1583931D806 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				501A9F2022FF1E0E00E2707C /* CoreLocation.framework */,
 				7001E324843AF81BB2D9EF69 /* Pods_Batman.framework */,
 			);
 			name = Frameworks;
@@ -81,6 +87,7 @@
 				50735A1322FE4697001614F6 /* LaunchScreen.storyboard */,
 				50735A1622FE4697001614F6 /* Info.plist */,
 				50735A0E22FE4695001614F6 /* Batman.xcdatamodeld */,
+				501A9F2222FF1FC000E2707C /* MyPin.swift */,
 			);
 			path = Batman;
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 			files = (
 				50735A1022FE4695001614F6 /* Batman.xcdatamodeld in Sources */,
 				50735A0A22FE4695001614F6 /* ViewController.swift in Sources */,
+				501A9F2322FF1FC000E2707C /* MyPin.swift in Sources */,
 				50735A0822FE4695001614F6 /* AppDelegate.swift in Sources */,
 				50735A1D22FE4E98001614F6 /* ScrollViewController.swift in Sources */,
 			);
