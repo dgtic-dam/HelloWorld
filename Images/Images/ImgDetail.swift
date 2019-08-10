@@ -11,7 +11,9 @@ import MapKit
 
 class ImgDetail: UIViewController {
     
+    //TAREA: Completa la práctica 2, para que desde el collection view se envíen estos dos valores y se presenten correctamente la interfaz
     var coordenada : CLLocationCoordinate2D?
+    var imgNombre: String?
     
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var mapType: UISegmentedControl!
@@ -54,38 +56,43 @@ class ImgDetail: UIViewController {
         }
     }
     
-    
-    
-    //Se manda a llamar cada que hace un cambio de vista
- /*   override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        let marginsGuide = self.view.layoutMarginsGuide
-        let screenWidth = marginsGuide.heightAnchor
-        let screenHeight = marginsGuide.heightAnchor
-        Image.translatesAutoresizingMaskIntoConstraints = false
-        //Redimensionar imagen con constraint
-        Image.leftAnchor.constraint(equalTo: marginsGuide.leftAnchor, constant: 0.0).isActive = true //Margen Izquierdo
-        Image.rightAnchor.constraint(equalTo: marginsGuide.rightAnchor,constant: 0.0).isActive = true //Margen Izquierdo
-        Image.widthAnchor.constraint(equalTo: screenWidth, multiplier: 1.0)
-        Image.heightAnchor.constraint(equalTo: screenHeight, multiplier: 0.5)
-        //Comenzará donde finaliza la imagen
-        mapType.topAnchor.constraint(equalTo: Image.bottomAnchor).isActive = true
-        mapType.widthAnchor.constraint(equalTo: screenWidth, multiplier: 1.0)
-        //Comienza donde termina el segmented control
-        mapDetail.topAnchor.constraint(equalTo: mapDetail.bottomAnchor).isActive = true
-        mapDetail.widthAnchor.constraint(equalTo: screenWidth, multiplier: 1.0)
-        
-    }*/
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Image.backgroundColor = UIColor.init(red: 41.0, green: 255, blue: 214, alpha: 31.0) //#29FFD6
         Image.backgroundColor = UIColor.gray
+        shareButton.setBackgroundImage(UIImage(named: "share_android"), for: .normal)
+        shareButton.setTitle("", for: .normal)
         // Do any additional setup after loading the view.
     }
     
-
+    //Se manda a llamar cada que hace un cambio de vista
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+            let margins = self.view.layoutMarginsGuide
+            Image.translatesAutoresizingMaskIntoConstraints = false
+            Image.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 0.0).isActive = true
+            Image.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 0.0).isActive = true
+            Image.topAnchor.constraint(equalTo: margins.topAnchor, constant: 0.0).isActive = true
+            Image.heightAnchor.constraint(equalTo: margins.heightAnchor, multiplier: 0.5).isActive = true
+        
+            mapType.translatesAutoresizingMaskIntoConstraints = false
+            mapType.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 0.0).isActive = true
+            mapType.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 0.0).isActive = true
+            mapType.topAnchor.constraint(equalTo: Image.bottomAnchor, constant: 0.0).isActive = true
+        
+            shareButton.translatesAutoresizingMaskIntoConstraints = false
+            shareButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 0.0).isActive = true
+            shareButton.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 0.0).isActive = true
+            shareButton.widthAnchor.constraint(equalToConstant: 45)
+            shareButton.heightAnchor.constraint(equalToConstant: 48)
+            
+            mapDetail.translatesAutoresizingMaskIntoConstraints = false
+            mapDetail.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 0.0).isActive = true
+            mapDetail.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 0.0).isActive = true
+            mapDetail.topAnchor.constraint(equalTo: mapType.bottomAnchor, constant: 0.0).isActive = true
+            mapDetail.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: 0.0).isActive = true
+    }
+    
     /*
     // MARK: - Navigation
 
