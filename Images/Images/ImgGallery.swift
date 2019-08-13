@@ -45,7 +45,9 @@ class ImgGallery: UICollectionViewController {
         //obtener el diccionario del arreglo, en la posición seleccionada
         let myDicctionary = items[indexPath!.row]
         //asignamos el diccionario, a la property del controller destino
-        destino.infoPic = [myDicctionary]
+        destino.imgNombre = myDicctionary.path
+        destino.lat = myDicctionary.lat
+        destino.lon = myDicctionary.lon
     }
 
 

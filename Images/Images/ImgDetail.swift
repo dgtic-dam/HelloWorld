@@ -14,6 +14,8 @@ class ImgDetail: UIViewController {
     //TAREA: Completa la práctica 2, para que desde el collection view se envíen estos dos valores y se presenten correctamente la interfaz
     var coordenada : CLLocationCoordinate2D?
     var imgNombre: String?
+    var lat: Double?
+    var lon: Double?
     var infoPic:[Imagen] = []
     
     @IBOutlet weak var Image: UIImageView!
@@ -24,13 +26,25 @@ class ImgDetail: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //UNAM
-        coordenada = CLLocationCoordinate2D(latitude: 19.32889, longitude: -99.187222)
+        coordenada = CLLocationCoordinate2D(latitude: lat!, longitude: lon!)
+        //coordenada = CLLocationCoordinate2D(latitude: 19.3072787, longitude: -99.1287316)
+        print("Lat \(lat) and Lon \(lon)")
+        print("Name: \(imgNombre)")
         let region = MKCoordinateRegion(center: coordenada!, latitudinalMeters: 500.0, longitudinalMeters: 500.0)
         mapDetail.setRegion(region, animated: true)
         let losPines = mapDetail.annotations //Da todos los pines en el mapa
         mapDetail.removeAnnotations(losPines) //eliminamos todos los pines que haya previamente
         let elPin = MyPin(coordenada!,  "Ud. Está aquí")
         mapDetail.addAnnotation(elPin)
+        
+        let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first
+        if let urlFoto = libraryURL?.appendingPathComponent(imgNombre!){
+            print("URLFoto: \(urlFoto)")
+            if let bytes = try? Data(contentsOf: urlFoto) {
+                Image.image = UIImage(data: bytes)
+                print("Image: \(Image)")
+            }
+        }
     }
     
     @IBAction func btnCompartirTouch(_ sender: Any) {

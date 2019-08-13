@@ -24,6 +24,7 @@ class CollectionViewCell: UICollectionViewCell {
         if let imgNom = info.path as? String{
             let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first
             if let urlFoto = libraryURL?.appendingPathComponent(imgNom){
+                print("URLFoto: \(urlFoto)")
                 if let bytes = try? Data(contentsOf: urlFoto) {
                     Image.image = UIImage(data: bytes)
                 }
