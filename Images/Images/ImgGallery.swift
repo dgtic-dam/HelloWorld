@@ -33,15 +33,21 @@ class ImgGallery: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        let destino = segue.destination as! ImgDetail
+        let indexPath = self.collectionView.indexPathsForSelectedItems?.first
+        //obtener el diccionario del arreglo, en la posición seleccionada
+        let myDicctionary = items[indexPath!.row]
+        //asignamos el diccionario, a la property del controller destino
+        destino.infoPic = [myDicctionary]
     }
-    */
+
 
     // MARK: UICollectionViewDataSource
 
@@ -67,6 +73,11 @@ class ImgGallery: UICollectionViewController {
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print ("selected")
+        performSegue(withIdentifier: "detail", sender: nil)
+    }
+    
     // MARK: UICollectionViewDelegate
 
     /*

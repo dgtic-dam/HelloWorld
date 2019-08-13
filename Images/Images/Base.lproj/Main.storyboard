@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4PN-H7-cWd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fRp-oR-2AV">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,11 +53,11 @@
                                 <size key="customSize" width="70" height="150"/>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="wmH-at-86g">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wmH-at-86g">
                             <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </collectionReusableView>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="bL6-le-sem">
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bL6-le-sem">
                             <rect key="frame" x="0.0" y="180" width="768" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </collectionReusableView>
@@ -66,11 +66,14 @@
                             <outlet property="delegate" destination="59l-qS-8rx" id="Rfn-Br-4WR"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Visualizar" id="Ada-GO-oMe"/>
+                    <navigationItem key="navigationItem" id="umH-T7-KSf"/>
+                    <connections>
+                        <segue destination="4PN-H7-cWd" kind="show" identifier="detail" id="0iT-nX-GaK"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xy2-mK-8tG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="808"/>
+            <point key="canvasLocation" x="1807.03125" y="807.421875"/>
         </scene>
         <!--Img Detail-->
         <scene sceneID="mRm-ni-Thy">
@@ -121,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsS-Ux-THn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873.4375" y="801.5625"/>
+            <point key="canvasLocation" x="2570" y="807"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="e64-cJ-MLI">
@@ -135,12 +138,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9UP-eE-12l"/>
-                        <segue destination="59l-qS-8rx" kind="relationship" relationship="viewControllers" id="DnC-BR-FQu"/>
+                        <segue destination="ys6-Hl-FDI" kind="relationship" relationship="viewControllers" id="DnC-BR-FQu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBo-U7-2yD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </scene>
+        <!--Visualizar-->
+        <scene sceneID="UEK-vF-mie">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ys6-Hl-FDI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Visualizar" id="Ada-GO-oMe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cRR-5i-jMR">
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="59l-qS-8rx" kind="relationship" relationship="rootViewController" id="ihc-zm-Put"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o19-fE-lKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041.40625" y="807.421875"/>
         </scene>
     </scenes>
 </document>

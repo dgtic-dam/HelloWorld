@@ -14,6 +14,7 @@ class ImgDetail: UIViewController {
     //TAREA: Completa la práctica 2, para que desde el collection view se envíen estos dos valores y se presenten correctamente la interfaz
     var coordenada : CLLocationCoordinate2D?
     var imgNombre: String?
+    var infoPic:[Imagen] = []
     
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var mapType: UISegmentedControl!
