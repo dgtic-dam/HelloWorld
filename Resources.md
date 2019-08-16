@@ -5,3 +5,4 @@
 * [Documentación CoreData](https://developer.apple.com/documentation/coredata/nspersistentcontainer)
 * [BCRYPT](https://github.com/aberkunov/PerfectBCrypt)
 * [Cocoapods](https://cocoapods.org/)
+* [DATA UNIVERSAL NUMBERING SYSTEM](https://es.wikipedia.org/wiki/DUNS)
