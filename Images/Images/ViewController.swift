@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     }
                 }
             }
-            else if permStatus == .denied {
+            else if permStatus == .authorized {
                 let ac = UIAlertController(title: "Error", message: "Para tomar fotos, debe autorizar el uso de la cámara desde Configuración, quiere autorizarlo ahora?", preferredStyle: .alert)
                 let a1 = UIAlertAction(title: "SI", style: .default) { (alert) in
                     UIApplication.shared.open(URL(string:UIApplication.openSettingsURLString)!, options: [:], completionHandler:nil)
