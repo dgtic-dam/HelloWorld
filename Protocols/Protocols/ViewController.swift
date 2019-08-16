@@ -8,11 +8,7 @@
 
 import UIKit
 
-protocol MyTableViewCellDelagate {
-    func buttonTouchedIn(_ cell:MyTableViewCell)
-}
-
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MyTableViewCellDelagate {
     
     let identificador = "myCell"
     
@@ -22,6 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identificador, for: indexPath) as! MyTableViewCell
+        cell.delegate = self
         cell.configure(book: books[indexPath.row])
         return cell
     }
@@ -39,17 +36,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let tabla = UITableView()
     
     
-    @objc func botonTouched(_ noti:Notification){
-        if let userInfo = noti.userInfo{
-            if let bookName = userInfo["book"] as? String{
-                let ac = UIAlertController(title: "Libros", message: "Seguro que deseas comprar" + bookName, preferredStyle: .alert)
-                let a1 = UIAlertAction(title: "SI", style: .default, handler: nil)
-                let a2 = UIAlertAction(title: "NO", style: .destructive, handler: nil)
-                ac.addAction(a1)
-                ac.addAction(a2)
-                self.present(ac, animated: true, completion: nil)
-            }
-        }
+    @objc func buttonTouchedIn(_ cell: MyTableViewCell){
+        let bookName = cell.bookName
+        let ac = UIAlertController(title: "Libros", message: "Seguro que deseas comprar" + bookName, preferredStyle: .alert)
+        let a1 = UIAlertAction(title: "SI", style: .default, handler: nil)
+        let a2 = UIAlertAction(title: "NO", style: .destructive, handler: nil)
+        ac.addAction(a1)
+        ac.addAction(a2)
+        self.present(ac, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

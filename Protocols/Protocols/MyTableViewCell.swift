@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol MyTableViewCellDelagate {
+    func buttonTouchedIn(_ cell: MyTableViewCell)
+}
+
+
 class MyTableViewCell: UITableViewCell {
-    
+    var delegate: MyTableViewCellDelagate?
     private let boton = UIButton()
-    private var bookName = ""
+    var bookName = ""
     
     //Se sobreescribe init porque no tenemos un XIB queutilice el awakeFromNib
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -26,7 +31,7 @@ class MyTableViewCell: UITableViewCell {
     }
     
     @objc func botonTouch(){
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "botonTouch"), object: self, userInfo: ["book":bookName]) // Se genera notificación
+        self.delegate?.buttonTouchedIn(self)
     }
     
     func configure(book:String){
