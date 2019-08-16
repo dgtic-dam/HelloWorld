@@ -14,4 +14,4 @@
 * [TEST FLIGHT by apple](https://developer.apple.com/testflight/)
   - Hacer todo el procesode registrado del app en itunes connect
   - Subir el IPA desde Xcode
-  - Registrar usuarios en TestFlight
+  - Registrar usuarios en TestFlight o descargar [app](https://apps.apple.com/es/app/testflight/id899247664)
