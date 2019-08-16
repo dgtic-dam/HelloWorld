@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol MyTableViewCellDelagate {
+    func buttonTouchedIn(_ cell:MyTableViewCell)
+}
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let identificador = "myCell"
