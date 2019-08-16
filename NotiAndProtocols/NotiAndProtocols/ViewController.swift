@@ -23,14 +23,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //Si el usuario toca la celda
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // _ se omite la etiqueta "tableView" de la firma del método
         let bookName = books[indexPath.row].replacingOccurrences(of: " ", with: "_")
-        let urlStr = "https://google.com/search?q=" + bookName
+        let nomEncode = bookName.addingPercentEncoding(withAllowedCharacters:.urlHostAllowed)
+        let urlStr = "https://google.com/search?q=" + (nomEncode ?? "")
         UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
 
     }
     
-    let books = ["Mujercitas", "Orgullo y Prejuicio", "Bovedas de Acero", "El viaje del Elefante", "El Padrino", "El Extranjero", "Become an Xcoder"]
+    let books = ["Mujercitas", "Orgullo y Prejuicio", "Bóvedas de Acero", "El viaje del Elefante", "El Padrino", "El Extranjero", "Become an Xcoder"]
     let tabla = UITableView()
     
     override func viewWillAppear(_ animated: Bool) { // Agregar el observador para el NotificationCenter
