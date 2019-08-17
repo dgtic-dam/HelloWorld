@@ -12,6 +12,10 @@
 		50180EB9230845F300A4020B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50180EB7230845F300A4020B /* Main.storyboard */; };
 		50180EBB230845F400A4020B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50180EBA230845F400A4020B /* Assets.xcassets */; };
 		50180EBE230845F400A4020B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50180EBC230845F400A4020B /* LaunchScreen.storyboard */; };
+		50EA5FD2230849F500659D0B /* MyDrawingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA5FD1230849F500659D0B /* MyDrawingImageView.swift */; };
+		50EA5FD423084A2500659D0B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA5FD323084A2500659D0B /* AVFoundation.framework */; };
+		50EA5FD623084A3600659D0B /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA5FD523084A3600659D0B /* PDFKit.framework */; };
+		50EA5FD823084A3E00659D0B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA5FD723084A3E00659D0B /* Alamofire.framework */; };
 		6ECA33360BE08D44EF9294C9 /* Pods_UploadImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C234C0396EE3F662DDF5DF /* Pods_UploadImage.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		50180EBA230845F400A4020B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50180EBD230845F400A4020B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50180EBF230845F400A4020B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50EA5FD1230849F500659D0B /* MyDrawingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDrawingImageView.swift; sourceTree = "<group>"; };
+		50EA5FD323084A2500659D0B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50EA5FD523084A3600659D0B /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		50EA5FD723084A3E00659D0B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D6DA14B1617799A3347A20 /* Pods-UploadImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UploadImage/Pods-UploadImage.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8C58366F84CC9C6CB03645 /* Pods-UploadImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-UploadImage/Pods-UploadImage.release.xcconfig"; sourceTree = "<group>"; };
 		F6C234C0396EE3F662DDF5DF /* Pods_UploadImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UploadImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EA5FD823084A3E00659D0B /* Alamofire.framework in Frameworks */,
+				50EA5FD623084A3600659D0B /* PDFKit.framework in Frameworks */,
+				50EA5FD423084A2500659D0B /* AVFoundation.framework in Frameworks */,
 				6ECA33360BE08D44EF9294C9 /* Pods_UploadImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +72,7 @@
 		50180EB2230845F300A4020B /* UploadImage */ = {
 			isa = PBXGroup;
 			children = (
+				50EA5FD1230849F500659D0B /* MyDrawingImageView.swift */,
 				50180EB3230845F300A4020B /* AppDelegate.swift */,
 				50180EB5230845F300A4020B /* ViewController.swift */,
 				50180EB7230845F300A4020B /* Main.storyboard */,
@@ -74,6 +86,9 @@
 		B1CAE73EB2883D6BE9EFAEF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50EA5FD723084A3E00659D0B /* Alamofire.framework */,
+				50EA5FD523084A3600659D0B /* PDFKit.framework */,
+				50EA5FD323084A2500659D0B /* AVFoundation.framework */,
 				F6C234C0396EE3F662DDF5DF /* Pods_UploadImage.framework */,
 			);
 			name = Frameworks;
@@ -200,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EA5FD2230849F500659D0B /* MyDrawingImageView.swift in Sources */,
 				50180EB6230845F300A4020B /* ViewController.swift in Sources */,
 				50180EB4230845F300A4020B /* AppDelegate.swift in Sources */,
 			);
@@ -358,7 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.rosales.daniel.UploadImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.rosales.daniel.UploadImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
