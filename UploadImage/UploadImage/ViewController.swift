@@ -38,7 +38,44 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         up_button.addTarget(self, action:#selector(botonUpTouch), for:.touchUpInside)
         up_button.isHidden = true
         self.view.addSubview(up_button)
+        //Llamada de emergencia
+        let buttonTel = UIButton(frame: CGRect(x: screenWidth / 3, y: screenHeight - 400.0, width: screenWidth / 3, height: 50.0))
+        buttonTel.setTitle("Llamar a emergencia", for:.normal)
+        buttonTel.backgroundColor = UIColor.blue
+        buttonTel.setTitleColor(UIColor.white, for: .normal)
+        buttonTel.layer.cornerRadius = button.frame.height / 2
+        buttonTel.addTarget(self, action:#selector(botonTelTouch), for:.touchUpInside)
+        self.view.addSubview(buttonTel)
+        //Abrir Facebook
+        let buttonFB = UIButton(frame: CGRect(x: screenWidth / 3, y: screenHeight - 600.0, width: screenWidth / 3, height: 50.0))
+        buttonFB.setTitle("Facebook", for:.normal)
+        buttonFB.backgroundColor = UIColor.green
+        buttonFB.setTitleColor(UIColor.white, for: .normal)
+        buttonFB.layer.cornerRadius = button.frame.height / 2
+        buttonFB.addTarget(self, action:#selector(botonFBTouch), for:.touchUpInside)
+        self.view.addSubview(buttonFB)
     }
+    
+    @objc func botonTelTouch(){
+        //URL Schemes: protocolos disponibles en el objeto URL para que se ejecuten aplicaciones predeterminadas en el dispositivo
+        let numeroStr = "tel://5556581111"
+        if let numeroURL = URL(string: numeroStr){
+            if UIApplication.shared.canOpenURL(numeroURL){
+                UIApplication.shared.open(numeroURL, options:[:], completionHandler: nil)
+            }
+        }
+    }
+    
+    @objc func botonFBTouch(){
+        //URL Schemes: protocolos disponibles en el objeto URL para que se ejecuten aplicaciones predeterminadas en el dispositivo
+        let fbStr = "fb://user?screen_name=lady_gaga"
+        if let fbURL = URL(string: fbStr){
+            if UIApplication.shared.canOpenURL(fbURL){
+                UIApplication.shared.open(fbURL, options:[:], completionHandler: nil)
+            }
+        }
+    }
+    
     func save () {
         let directoryURL = FileManager.default.urls(for:.documentDirectory, in:.userDomainMask).first
         if let fileURL = directoryURL?.appendingPathComponent(self.imageName + ".pdf") {
