@@ -9,6 +9,9 @@ target 'UploadImage' do
 
   # Pods for Batman
   pod 'Alamofire', '4.8.2'
+  pod 'FirebaseCore'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseInstanceId'
   
 end
 

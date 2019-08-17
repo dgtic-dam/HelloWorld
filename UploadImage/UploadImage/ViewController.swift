@@ -24,14 +24,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         let button = UIButton(frame: CGRect(x: screenWidth / 3, y: screenHeight - 200.0, width: screenWidth / 3, height: 50.0))
-        button.setTitle("Elegir Imagen", for:.normal)
+        //button.setTitle("Elegir Imagen", for:.normal)
+        button.setTitle(NSLocalizedString("ViewController.boton1", comment: ""), for:.normal) //Localize idioma
         button.backgroundColor = UIColor.red
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = button.frame.height / 2
         button.addTarget(self, action:#selector(botonTouch), for:.touchUpInside)
         self.view.addSubview(button)
         up_button.frame = CGRect(x: screenWidth / 3, y: screenHeight - 100.0, width: screenWidth / 3, height: 50.0)
-        up_button.setTitle("Enviar Imagen", for:.normal)
+        //up_button.setTitle("Enviar Imagen", for:.normal)
+        up_button.setTitle(NSLocalizedString("ViewController.boton2", comment: ""), for:.normal)
         up_button.backgroundColor = UIColor.red
         up_button.setTitleColor(UIColor.white, for: .normal)
         up_button.layer.cornerRadius = button.frame.height / 2
@@ -40,7 +42,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.view.addSubview(up_button)
         //Llamada de emergencia
         let buttonTel = UIButton(frame: CGRect(x: screenWidth / 3, y: screenHeight - 400.0, width: screenWidth / 3, height: 50.0))
-        buttonTel.setTitle("Llamar a emergencia", for:.normal)
+        //buttonTel.setTitle("Llamar a emergencia", for:.normal)
+        buttonTel.setTitle(NSLocalizedString("ViewController.boton3", comment: ""), for:.normal)
         buttonTel.backgroundColor = UIColor.blue
         buttonTel.setTitleColor(UIColor.white, for: .normal)
         buttonTel.layer.cornerRadius = button.frame.height / 2

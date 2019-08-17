@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  UploadImage
+
+  Created by Infraestructura on 8/17/19.
+  Copyright © 2019 Daniel Rosales. All rights reserved.
+*/
+
+/*"boton1" = "Choose image";
+"boton2" = "Upload image";
+"boton3" = "Call 911"*/
+"ViewController.boton1" = "Elegir imagen";
+"ViewController.boton2" = "Subir imagen";
+"ViewController.boton3" = "Llamar a 911";

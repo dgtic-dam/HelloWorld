@@ -16,6 +16,8 @@
 		50EA5FD423084A2500659D0B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA5FD323084A2500659D0B /* AVFoundation.framework */; };
 		50EA5FD623084A3600659D0B /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA5FD523084A3600659D0B /* PDFKit.framework */; };
 		50EA5FD823084A3E00659D0B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA5FD723084A3E00659D0B /* Alamofire.framework */; };
+		50EA5FDA23086CDF00659D0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50EA5FD923086CDF00659D0B /* GoogleService-Info.plist */; };
+		50EA5FDF230883C800659D0B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50EA5FE1230883C800659D0B /* Localizable.strings */; };
 		6ECA33360BE08D44EF9294C9 /* Pods_UploadImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C234C0396EE3F662DDF5DF /* Pods_UploadImage.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,10 @@
 		50EA5FD323084A2500659D0B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		50EA5FD523084A3600659D0B /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
 		50EA5FD723084A3E00659D0B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50EA5FD923086CDF00659D0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		50EA5FE0230883C800659D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50EA5FE22308841400659D0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		50EA5FE32308842200659D0B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4D6DA14B1617799A3347A20 /* Pods-UploadImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UploadImage/Pods-UploadImage.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8C58366F84CC9C6CB03645 /* Pods-UploadImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-UploadImage/Pods-UploadImage.release.xcconfig"; sourceTree = "<group>"; };
 		F6C234C0396EE3F662DDF5DF /* Pods_UploadImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UploadImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,7 @@
 		50180EB2230845F300A4020B /* UploadImage */ = {
 			isa = PBXGroup;
 			children = (
+				50EA5FD923086CDF00659D0B /* GoogleService-Info.plist */,
 				50EA5FD1230849F500659D0B /* MyDrawingImageView.swift */,
 				50180EB3230845F300A4020B /* AppDelegate.swift */,
 				50180EB5230845F300A4020B /* ViewController.swift */,
@@ -79,6 +86,7 @@
 				50180EBA230845F400A4020B /* Assets.xcassets */,
 				50180EBC230845F400A4020B /* LaunchScreen.storyboard */,
 				50180EBF230845F400A4020B /* Info.plist */,
+				50EA5FE1230883C800659D0B /* Localizable.strings */,
 			);
 			path = UploadImage;
 			sourceTree = "<group>";
@@ -147,6 +155,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
+				fr,
 			);
 			mainGroup = 50180EA7230845F200A4020B;
 			productRefGroup = 50180EB1230845F300A4020B /* Products */;
@@ -163,7 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EA5FDF230883C800659D0B /* Localizable.strings in Resources */,
 				50180EBE230845F400A4020B /* LaunchScreen.storyboard in Resources */,
+				50EA5FDA23086CDF00659D0B /* GoogleService-Info.plist in Resources */,
 				50180EBB230845F400A4020B /* Assets.xcassets in Resources */,
 				50180EB9230845F300A4020B /* Main.storyboard in Resources */,
 			);
@@ -240,6 +252,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		50EA5FE1230883C800659D0B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50EA5FE0230883C800659D0B /* en */,
+				50EA5FE22308841400659D0B /* es-419 */,
+				50EA5FE32308842200659D0B /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -247,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -308,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
