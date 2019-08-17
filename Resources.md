@@ -5,6 +5,7 @@
 * [Documentación CoreData](https://developer.apple.com/documentation/coredata/nspersistentcontainer)
 * [BCRYPT](https://github.com/aberkunov/PerfectBCrypt)
 * [Cocoapods](https://cocoapods.org/)
+* [iosGadgetHacks](https://ios.gadgethacks.com/)
 ### Probar apps
   - Registrar UDID's en cuenta apple developer
   - Generar mobile provision
