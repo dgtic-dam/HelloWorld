@@ -35,7 +35,7 @@ class MyTableViewCell: UITableViewCell {
     }
     
     func configure(book:String){
-        self.boton.setTitle("COMPRAR \(book)", for: .normal)
+        self.boton.setTitle("COMPRAR: \(book)", for: .normal)
         self.boton.frame = CGRect(x: 10, y: 0, width: self.frame.width - 50, height: self.frame.height)
     }
     
