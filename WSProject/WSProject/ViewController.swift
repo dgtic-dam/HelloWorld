@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  WSProject
 //
-//  Created by Rafael González on 8/17/19.
-//  Copyright © 2019 com.gonzalez.rafael. All rights reserved.
+//  Created by Infraestructura on 8/24/19.
+//  Copyright © 2019 bitmania.mx. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     //GET All
     @IBAction func btnGetAll(_ sender: UIButton) {
         
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let base64LoginData = loginData.base64EncodedString()
         
         //Create the request
-        let url = URL(string: baseURL + "projectmananger/projectmanangers/" )!
+        let url = URL(string: baseURL + "projectmanagerservice/projectmanagers/" )!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Basic \(base64LoginData)", forHTTPHeaderField: "Authorization")
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         let base64LoginData = loginData.base64EncodedString()
         
         //Create the request
-        let url = URL(string: baseURL + "projectmananger/projectmananger/1" )!
+        let url = URL(string: baseURL + "projectmanagerservice/projectmanager/1" )!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Basic \(base64LoginData)", forHTTPHeaderField: "Authorization")
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         let base64LoginData = loginData.base64EncodedString()
         
         //Create the request
-        let url = URL(string: baseURL + "projectmananger/projectmananger/" )!
+        let url = URL(string: baseURL + "projectmanagerservice/projectmanager/" )!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Basic \(base64LoginData)", forHTTPHeaderField: "Authorization")
@@ -96,8 +96,8 @@ class ViewController: UIViewController {
         let lastName = "Pérez"
         
         let jsonObject: [String:Any] = [
-                "firstName": firstName,
-                "lastName": lastName
+            "firstName": firstName,
+            "lastName": lastName
         ]
         if let data = try? JSONSerialization.data(withJSONObject: jsonObject, options: [] ),
             let jsonString = String(data: data, encoding: .utf8) {
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
         let base64LoginData = loginData.base64EncodedString()
         
         //Create the request
-        let url = URL(string: baseURL + "projectmananger/projectmananger/" )!
+        let url = URL(string: baseURL + "projectmanagerservice/projectmanager/" )!
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         request.setValue("Basic \(base64LoginData)", forHTTPHeaderField: "Authorization")
@@ -175,7 +175,7 @@ class ViewController: UIViewController {
         let base64LoginData = loginData.base64EncodedString()
         
         //Create the request
-        let url = URL(string: baseURL + "projectmananger/projectmananger/10" )!
+        let url = URL(string: baseURL + "projectmanagerservice/projectmanager/11" )!
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         request.setValue("Basic \(base64LoginData)", forHTTPHeaderField: "Authorization")
@@ -197,4 +197,3 @@ class ViewController: UIViewController {
         task.resume()
     }
 }
-
